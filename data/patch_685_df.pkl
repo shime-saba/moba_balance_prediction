@@ -1,0 +1,1989 @@
+ccopy_reg
+_reconstructor
+p1
+(cpandas.core.frame
+DataFrame
+p2
+c__builtin__
+object
+p3
+NtRp4
+g1
+(cpandas.core.internals
+BlockManager
+p5
+g3
+NtRp6
+((lp7
+cpandas.core.index
+_new_Index
+p8
+(cpandas.core.index
+Index
+p9
+(dp10
+S'data'
+p11
+cnumpy.core.multiarray
+_reconstruct
+p12
+(cnumpy
+ndarray
+p13
+(I0
+tS'b'
+tRp14
+(I1
+(I7
+tcnumpy
+dtype
+p15
+(S'O8'
+I0
+I1
+tRp16
+(I3
+S'|'
+NNNI-1
+I-1
+I63
+tbI00
+(lp17
+S'hero'
+p18
+aS'patch'
+p19
+aS'text'
+p20
+aS'num_buffs'
+p21
+aS'num_nerfs'
+p22
+aS'change_type'
+p23
+aS'text_no_abi'
+p24
+atbsS'name'
+p25
+NstRp26
+ag8
+(cpandas.core.index
+Int64Index
+p27
+(dp28
+g11
+g12
+(g13
+(I0
+tS'b'
+tRp29
+(I1
+(I111
+tg15
+(S'i8'
+I0
+I1
+tRp30
+(I3
+S'<'
+NNNI-1
+I-1
+I0
+tbI00
+S'\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x00\x00\x00\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x00\x00\x00\x00\r\x00\x00\x00\x00\x00\x00\x00\x0e\x00\x00\x00\x00\x00\x00\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x00\x00\x00\x00\x00\x11\x00\x00\x00\x00\x00\x00\x00\x12\x00\x00\x00\x00\x00\x00\x00\x13\x00\x00\x00\x00\x00\x00\x00\x14\x00\x00\x00\x00\x00\x00\x00\x15\x00\x00\x00\x00\x00\x00\x00\x16\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x00\x00\x00\x00\x00\x18\x00\x00\x00\x00\x00\x00\x00\x19\x00\x00\x00\x00\x00\x00\x00\x1a\x00\x00\x00\x00\x00\x00\x00\x1b\x00\x00\x00\x00\x00\x00\x00\x1c\x00\x00\x00\x00\x00\x00\x00\x1d\x00\x00\x00\x00\x00\x00\x00\x1e\x00\x00\x00\x00\x00\x00\x00\x1f\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00\x00\x00\x00\x00!\x00\x00\x00\x00\x00\x00\x00"\x00\x00\x00\x00\x00\x00\x00#\x00\x00\x00\x00\x00\x00\x00$\x00\x00\x00\x00\x00\x00\x00%\x00\x00\x00\x00\x00\x00\x00&\x00\x00\x00\x00\x00\x00\x00\'\x00\x00\x00\x00\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00)\x00\x00\x00\x00\x00\x00\x00*\x00\x00\x00\x00\x00\x00\x00+\x00\x00\x00\x00\x00\x00\x00,\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x00\x00\x00\x00\x00.\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x000\x00\x00\x00\x00\x00\x00\x001\x00\x00\x00\x00\x00\x00\x002\x00\x00\x00\x00\x00\x00\x003\x00\x00\x00\x00\x00\x00\x004\x00\x00\x00\x00\x00\x00\x005\x00\x00\x00\x00\x00\x00\x006\x00\x00\x00\x00\x00\x00\x007\x00\x00\x00\x00\x00\x00\x008\x00\x00\x00\x00\x00\x00\x009\x00\x00\x00\x00\x00\x00\x00:\x00\x00\x00\x00\x00\x00\x00;\x00\x00\x00\x00\x00\x00\x00<\x00\x00\x00\x00\x00\x00\x00=\x00\x00\x00\x00\x00\x00\x00>\x00\x00\x00\x00\x00\x00\x00?\x00\x00\x00\x00\x00\x00\x00@\x00\x00\x00\x00\x00\x00\x00A\x00\x00\x00\x00\x00\x00\x00B\x00\x00\x00\x00\x00\x00\x00C\x00\x00\x00\x00\x00\x00\x00D\x00\x00\x00\x00\x00\x00\x00E\x00\x00\x00\x00\x00\x00\x00F\x00\x00\x00\x00\x00\x00\x00G\x00\x00\x00\x00\x00\x00\x00H\x00\x00\x00\x00\x00\x00\x00I\x00\x00\x00\x00\x00\x00\x00J\x00\x00\x00\x00\x00\x00\x00K\x00\x00\x00\x00\x00\x00\x00L\x00\x00\x00\x00\x00\x00\x00M\x00\x00\x00\x00\x00\x00\x00N\x00\x00\x00\x00\x00\x00\x00O\x00\x00\x00\x00\x00\x00\x00P\x00\x00\x00\x00\x00\x00\x00Q\x00\x00\x00\x00\x00\x00\x00R\x00\x00\x00\x00\x00\x00\x00S\x00\x00\x00\x00\x00\x00\x00T\x00\x00\x00\x00\x00\x00\x00U\x00\x00\x00\x00\x00\x00\x00V\x00\x00\x00\x00\x00\x00\x00W\x00\x00\x00\x00\x00\x00\x00X\x00\x00\x00\x00\x00\x00\x00Y\x00\x00\x00\x00\x00\x00\x00Z\x00\x00\x00\x00\x00\x00\x00[\x00\x00\x00\x00\x00\x00\x00\\\x00\x00\x00\x00\x00\x00\x00]\x00\x00\x00\x00\x00\x00\x00^\x00\x00\x00\x00\x00\x00\x00_\x00\x00\x00\x00\x00\x00\x00`\x00\x00\x00\x00\x00\x00\x00a\x00\x00\x00\x00\x00\x00\x00b\x00\x00\x00\x00\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x00\x00\x00\x00e\x00\x00\x00\x00\x00\x00\x00f\x00\x00\x00\x00\x00\x00\x00g\x00\x00\x00\x00\x00\x00\x00h\x00\x00\x00\x00\x00\x00\x00i\x00\x00\x00\x00\x00\x00\x00j\x00\x00\x00\x00\x00\x00\x00k\x00\x00\x00\x00\x00\x00\x00l\x00\x00\x00\x00\x00\x00\x00m\x00\x00\x00\x00\x00\x00\x00n\x00\x00\x00\x00\x00\x00\x00'
+tbsg25
+NstRp31
+a(lp32
+g12
+(g13
+(I0
+tS'b'
+tRp33
+(I1
+(I2
+I111
+tg30
+I00
+S'\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+tbag12
+(g13
+(I0
+tS'b'
+tRp34
+(I1
+(I4
+I111
+tg16
+I00
+(lp35
+VAbaddon
+p36
+aVAlchemist
+p37
+aVAncient Apparition
+p38
+aVAnti-Mage
+p39
+aVArc Warden
+p40
+aVAxe
+p41
+aVBane
+p42
+aVBatrider
+p43
+aVBeastmaster
+p44
+aVBloodseeker
+p45
+aVBounty Hunter
+p46
+aVBrewmaster
+p47
+aVBristleback
+p48
+aVBroodmother
+p49
+aVCentaur Warrunner
+p50
+aVChaos Knight
+p51
+aVChen
+p52
+aVClinkz
+p53
+aVClockwerk
+p54
+aVCrystal Maiden
+p55
+aVDark Seer
+p56
+aVDazzle
+p57
+aVDeath Prophet
+p58
+aVDisruptor
+p59
+aVDoom
+p60
+aVDragon Knight
+p61
+aVDrow Ranger
+p62
+aVEarth Spirit
+p63
+aVEarthshaker
+p64
+aVElder Titan
+p65
+aVEmber Spirit
+p66
+aVEnchantress
+p67
+aVEnigma
+p68
+aVFaceless Void
+p69
+aVGyrocopter
+p70
+aVHuskar
+p71
+aVInvoker
+p72
+aVIo
+p73
+aVJakiro
+p74
+aVJuggernaut
+p75
+aVKeeper of the Light
+p76
+aVKunkka
+p77
+aVLegion Commander
+p78
+aVLeshrac
+p79
+aVLich
+p80
+aVLifestealer
+p81
+aVLina
+p82
+aVLion
+p83
+aVLone Druid
+p84
+aVLuna
+p85
+aVLycan
+p86
+aVMagnus
+p87
+aVMedusa
+p88
+aVMeepo
+p89
+aVMirana
+p90
+aVMorphling
+p91
+aVNaga Siren
+p92
+aVNature's Prophet
+p93
+aVNecrophos
+p94
+aVNight Stalker
+p95
+aVNyx Assassin
+p96
+aVOgre Magi
+p97
+aVOmniknight
+p98
+aVOracle
+p99
+aVOutworld Devourer
+p100
+aVPhantom Assassin
+p101
+aVPhantom Lancer
+p102
+aVPhoenix
+p103
+aVPuck
+p104
+aVPudge
+p105
+aVPugna
+p106
+aVQueen of Pain
+p107
+aVRazor
+p108
+aVRiki
+p109
+aVRubick
+p110
+aVSand King
+p111
+aVShadow Demon
+p112
+aVShadow Fiend
+p113
+aVShadow Shaman
+p114
+aVSilencer
+p115
+aVSkywrath Mage
+p116
+aVSlardar
+p117
+aVSlark
+p118
+aVSniper
+p119
+aVSpectre
+p120
+aVSpirit Breaker
+p121
+aVStorm Spirit
+p122
+aVSven
+p123
+aVTechies
+p124
+aVTemplar Assassin
+p125
+aVTerrorblade
+p126
+aVTidehunter
+p127
+aVTimbersaw
+p128
+aVTinker
+p129
+aVTiny
+p130
+aVTreant Protector
+p131
+aVTroll Warlord
+p132
+aVTusk
+p133
+aVUndying
+p134
+aVUrsa
+p135
+aVVengeful Spirit
+p136
+aVVenomancer
+p137
+aVViper
+p138
+aVVisage
+p139
+aVWarlock
+p140
+aVWeaver
+p141
+aVWindranger
+p142
+aVWinter Wyvern
+p143
+aVWitch Doctor
+p144
+aVWraith King
+p145
+aVZeus
+p146
+aS'6.85'
+p147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+ag147
+a(lp148
+VMist Coil cooldown reduced from 5 to 4.5
+p149
+aVBorrowed Time  Aghanim's Scepter damage redirection increased from 35% to 50%
+p150
+aa(lp151
+VAcid Spray damage increased from 12/16/20/24 to 15/20/25/30
+p152
+aVGreevil's Greed Bounty Rune bonus increased from 4x to 5x
+p153
+aa(lp154
+VCold Feet cast range increased from 700 to 700/800/900/1000
+p155
+aa(lp156
+VBlink distance rescaled from 1000/1075/1150/1150 to 925/1000/1075/1150
+p157
+aVMana Void stun rescaled from 0.1/0.2/0.3 to 0.15
+p158
+aa(lp159
+VSpark Wraith cooldown reduced from 7 to 4
+p160
+aa(lp161
+a(lp162
+VEnfeeble cooldown reduced from 10 to 8
+p163
+aVBrain Sap mana cost reduced from 100/125/150/175 to 70/100/130/160
+p164
+aVFixed  Fiend's Grip sometimes not granting True Sight over the target properly
+p165
+aa(lp166
+VFlamebreak damage over time reduced from 50 per second to 25/30/35/40
+p167
+aVFlamebreak damage duration increased from 1/2/3/4 to 3/4/5/6
+p168
+aVAdded  Aghanim's Scepter upgrade:  Flaming Lasso grabs its target, as well as the target's nearest allied hero within 400 range. The secondary target is tethered to the first. Also causes Lasso to deal 100 damage per second.
+p169
+aag161
+a(lp170
+VThirst scaling changed from 100%->25% to 75%->25%
+p171
+aVBloodrage heal reduced from 25% to 19/21/23/25%
+p172
+aa(lp173
+VTrack now provides vision only of the target rather than the area around it
+p174
+aVTrack allied bonus gold reduced from 50/100/150 to 40/80/120
+p175
+aa(lp176
+VPrimal Split Storm's Dispel Magic area of effect increased from 200 to 600
+p177
+aVPrimal Split Storm's Dispel Magic cooldown reduced from 8 to 6 seconds
+p178
+aVPrimal Split Earth's Hurl Boulder cooldown reduced from 7 to 5 seconds
+p179
+aa(lp180
+VBristleback passive  Quill Spray damage threshold reduced from 250 to 230
+p181
+aag161
+a(lp182
+VReturn strength as bonus damage increased from 26/34/42/50% to 30/42/54/66%
+p183
+aa(lp184
+VChaos Strike now lowers the target's armor by 5 for 8 seconds whenever it crits \u000a\u000aApplies before the damage happens, like  Desolator. Can be applied by illusions, but multiple instances do not stack. Only triggers when critical strike
+p185
+aVChaos Strike critical damage reduced from 150/200/250/300% to 125/175/225/275%
+p186
+aa(lp187
+VPenitence slow/damage amplification increased from 14/18/22/26% to 15/20/25/30%
+p188
+aVTest of Faith (Damage) mana cost reduced from 175 to 90/100/110/120
+p189
+aVTest of Faith (Damage) cooldown reduced from 24 to 16
+p190
+aa(lp191
+VStrafe cooldown reduced from 45/40/35/30 to 40/35/30/25
+p192
+aag161
+a(lp193
+VCrystal Nova cooldown reduced from 15 to 13
+p194
+aa(lp195
+VBase intelligence reduced by 2
+p196
+aa(lp197
+VPoison Touch mana cost reduced from 100/115/130/145 to 100
+p198
+aa(lp199
+VExorcism spirits increased from 6/13/21 to 8/14/21
+p200
+aa(lp201
+VThunder Strike cooldown reduced from 16 to 12/11/10/9
+p202
+aVThunder Strike now only provides vision over the target itself
+p203
+aa(lp204
+VScorched Earth damage/heal increased from 12/18/24/30 to 12/24/36/48
+p205
+aVLVL? Death cooldown reduced from 8 to 7
+p206
+aa(lp207
+VBreathe Fire debuff duration increased from 8 to 11 seconds
+p208
+aa(lp209
+VPrecision Aura bonus damage increased from 18/24/30/36% to 20/26/32/38%
+p210
+aVPrecision Aura cooldown reduced from 120 to 100
+p211
+aa(lp212
+VStone Remnant is now placed in front of you when double-clicking it
+p213
+aa(lp214
+VFissure damage reduced from 125/175/225/275 to 110/160/210/260
+p215
+aa(lp216
+VEcho Stomp area of effect increased from 475 to 500
+p217
+aVAstral Spirit mana cost rescaled from 110 to 80/90/100/110
+p218
+aVAstral Spirit attack damage per creep increased from 3/6/9/12 to 6/9/12/15
+p219
+aVNatural Order aura sticky duration increased from 0.5 to 1.0
+p220
+aag161
+a(lp221
+VNature's Attendants wisp count increased from 3/5/7/9 to 4/6/8/10
+p222
+aVImpetus is no longer a Unique Attack Modifier
+p223
+aa(lp224
+VMidnight Pulse cast time reduced from 0.2 to 0.1
+p225
+aVMidnight Pulse area of effect reduced from 600 to 550
+p226
+aVBlack Hole radius increased from 400 to 420
+p227
+aag161
+a(lp228
+VRocket Barrage damage per rocket reduced from 8/13/18/23 to 7/12/17/22\u000a\u000aTotal damage reduced from 240/390/540/690 to 210/360/510/660
+p229
+aVCall Down slow no longer pierces Spell Immunity
+p230
+aa(lp231
+VBerserker's Blood Magic Resistance per stack reduced from 4/5/6/7 to 3/4/5/6
+p232
+aa(lp233
+VIntelligence growth increased from 3.2 to 4.0
+p234
+aVAlacrity speed/damage bonus increased from 20->80 to 30->90
+p235
+aVAghanim's Scepter now adds one level to the stats provided by  Quas,  Wex, and  Exort on all Invoked spells
+p236
+aVMax level  Deafening Blast now retains its normal location targeting UI \u000a\u000aRather than it being changed to a no target cast at a certain level. This does not affect how the ability itself works.
+p237
+aag161
+a(lp238
+VDual Breath's fiery wave now moves at the same speed as its icy wave: 850 to 1050
+p239
+aVDual Breath damage increased from 16/26/56/76 to 20/40/60/80
+p240
+aVIce Path range increased from 1100 to 1200
+p241
+aa(lp242
+VBlade Fury damage increased from 80/100/120/140 to 80/105/130/155
+p243
+aa(lp244
+VChakra Magic spell cooldown reduction increased from 1/2/3/4 to 2/3/4/5
+p245
+aa(lp246
+VTidebringer damage increased from 15/30/45/60 to 20/35/50/65
+p247
+aVX Marks the Spot cast range rescaled from 350/550/750/1000 to 400/600/800/1000
+p248
+aVX Marks the Spot cooldown rescaled from 19/16/13/10 to 26/20/14/8
+p249
+aVGhostship cast point reduced from 0.4 to 0.3
+p250
+aa(lp251
+VBase damage increased by 4
+p252
+aVOverwhelming Odds cooldown reduced from 18 to 15
+p253
+aVPress the Attack cast time reduced from 0.3 to 0.2
+p254
+aVFixed Legion Commander sometimes auto-attacking nearby units after  Duel ends instead of continuing to attack the dueled target
+p255
+aa(lp256
+VBase damage reduced by 4
+p257
+aVLightning Storm jump distance reduced from 650 to 475
+p258
+aVLightning Storm damage reduced from 80/140/200/260 to 50/100/150/200
+p259
+aa(lp260
+VSacrifice no longer splits XP with enemies
+p261
+aVChain Frost projectile speed increased from 750 to 850
+p262
+aVChain Frost attack speed slow increased from 20 to 30 \u000a\u000aNow matches move speed slow
+p263
+aa(lp264
+VRage cooldown reduced from 19 to 16
+p265
+aVInfest and  Control can now be used on Ancient Creeps
+p266
+aa(lp267
+VLight Strike Array damage reduced from 120/160/200/240 to 80/120/160/200
+p268
+aVLaguna Blade damage reduced from 450/675/950 to 450/650/850
+p269
+aa(lp270
+VFinger of Death  Aghanim's Scepter upgrade area of effect increased from 200 to 300
+p271
+aa(lp272
+VSummon Spirit Bear cooldown reduced from 180/160/140/120 to 120
+p273
+aVBattle Cry bonus damage increased from 60/90/120 to 90/120/150
+p274
+aVBattle Cry bonus armor increased from 6/12/18 to 10/15/20
+p275
+aa(lp276
+VStrength gain increased from 1.9 to 2.2
+p277
+aVEclipse cooldown reduced from 160/150/140 to 140
+p278
+aVEclipse  Aghanim's Scepter beam count increased from 6/10/14 to 6/12/18
+p279
+aa(lp280
+VStrength gain increased from 2.75 to 3.0
+p281
+aVShapeshift critical strike chance increased from 30% to 30/35/40%
+p282
+aa(lp283
+VEmpower cooldown reduced from 12 to 8
+p284
+aa(lp285
+VMystic Snake damage and mana steal boost per jump increased from 25% to 35%
+p286
+aag161
+a(lp287
+VAgility growth increased from 2.75 to 3.3
+p288
+aVStarstorm secondary strike search radius increased from 325 to 425
+p289
+aa(lp290
+VAgility growth increased from 3 to 3.4
+p291
+aVAdaptive Strike damage rescaled from 20/40/60/80 to 50/60/70/80
+p292
+aVHybrid no longer hides Morphling or restricts its usage when a  Replicate is out
+p293
+aVHybrids are visibly known to enemies\u000a\u000aSimilar to  Dark Seer's  Wall of Replica illusions
+p294
+aa(lp295
+VRip Tide damage rescaled from 130/160/190/220 to 100/140/180/220
+p296
+aVSong of the Siren  Aghanim's Scepter heal increased from 6% to 8%
+p297
+aa(lp298
+VSprout cast time reduced from 0.5 to 0.35
+p299
+aVSprout mana cost reduced from 100/120/140/160 to 70/90/110/130
+p300
+aVNature's Call Treants movement speed increased from 300 to 325
+p301
+aVNature's Call Treants vision reduced from 1200 to 1000
+p302
+aVGreater Treant Base Attack Time reduced from 1.75 to 1.0
+p303
+aVWrath of Nature  Aghanim's Scepter now applies a 4 second buff on the units it hits, which will spawn the extra treant if the unit dies during that time
+p304
+aa(lp305
+VDeath Pulse damage increased from 75/125/200/275 to 125/175/225/275
+p306
+aVHeartstopper Aura no longer affects ancient creeps
+p307
+aVSadist health regen increased from 1/2/3/4 to 1/2/3/6
+p308
+aVSadist mana regen increased from 2/4/6/10 to 2/4/6/12
+p309
+aa(lp310
+VBase health regen increased from 0.25 to 2
+p311
+aa(lp312
+VBurrow  Impale cooldown reduced from 9 to 7
+p313
+aVBurrow  Impale and  Mana Burn bonus range increased from 50% to 75%
+p314
+aVVendetta duration increased from 25/35/50 to 40/50/60
+p315
+aa(lp316
+VBase armor increased by 1
+p317
+aVBloodlust attack speed bonus increased from 20/30/40/50 to 30/40/50/60
+p318
+aVBloodlust can now be cast on towers
+p319
+aVFixed  Multicast  Bloodlust not affecting nearby Spell Immune allies \u000a\u000aCould already target them directly
+p320
+aa(lp321
+VPurification cast point reduced from 0.4 to 0.25
+p322
+aVDegen Aura stickiness reduced from 2 to 1
+p323
+aa(lp324
+VFortune's End cast time reduced from 0.3 to 0
+p325
+aVFortune's End cast range increased from 650 to 850
+p326
+aVFortune's End radius increased from 215 to 300
+p327
+aVFortune's End damage rescaled from 75/150/225/300 to 90/120/150/180
+p328
+aVFortune's End cooldown rescaled from 12 to 15/12/9/6
+p329
+aVFate's Edict no longer amplifies incoming non-magical damage
+p330
+aVFate's Edict now has normal purgability rules
+p331
+aVPurifying Flames cooldown reduced from 2.5 to 2.25
+p332
+aa(lp333
+VStrength gain increased from 1.85 to 2.3
+p334
+aVSanity's Eclipse now always removes 40% of affected heroes' max mana\u000a\u000aInstead of 75% of current mana only when under the threshold
+p335
+aVSanity's Eclipse mana loss no longer pierces Spell Immunity\u000a\u000aMatches its damage behavior
+p336
+aVSanity's Eclipse cast range increased from 600/650/700 to 700
+p337
+aVSanity's Eclipse cast range is no longer increased with  Aghanim's Scepter
+p338
+aa(lp339
+VStifling Dagger now applies your attack's on-hit effects\u000a\u000aDoes not guarantee a proc if the effect is chance-based
+p340
+aVBlur no longer has a 0.75 second delay
+p341
+aa(lp342
+VAgility growth reduced from 3 to 2.6
+p343
+aVDoppelganger cast time increased from 0 to 0.1
+p344
+aa(lp345
+VSun Ray max health damage per second increased from 1/2/3/4% to 1.25/2.5/3.75/5%\u000a\u000aHeal per second is half these values
+p346
+aa(lp347
+VIllusory Orb speed increased from 600 to 650\u000a\u000aTravel distance increased from 1800 to 1950 to keep the total duration the orb is alive the same
+p348
+aVIllusory Orb cooldown reduced from 12 to 11 seconds
+p349
+aVDream Coil cooldown reduced from 85 to 75
+p350
+aa(lp351
+VRot damage rescaled from 35/60/85/110 to 30/60/90/120
+p352
+aVRot move slow increased from 20/22/24/26% to 27%
+p353
+aVFixed  Dismember sometimes not granting True Sight over the target properly
+p354
+aa(lp355
+VBase movement speed increased from 320 to 330
+p356
+aVNether Ward is now placed at the target location using a 150 cast range ability\u000a\u000aInstead of placing 150 units in front of his facing direction. Using double click will immediately place it infront of you.
+p357
+aVLife Drain damage/steal per second increased from 150/185/220 to 150/200/250
+p358
+aa(lp359
+VSonic Wave damage reduced from 290/390/490 to 290/380/470 ( Aghanim's Scepter damage reduced from 325/450/575 to 325/440/555)
+p360
+aa(lp361
+VStatic Link now drains damage smoothly over its duration rather than every second
+p362
+aa(lp363
+VPermanent Invisibility health regen increased from 4/5/6/7 to 6/8/10/12
+p364
+aag161
+a(lp365
+VCaustic Finale debuff expire damage increased from 30% to 50%
+p366
+aVCaustic Finale debuff slow increased from 20% to 25%
+p367
+aa(lp368
+VShadow Poison cooldown reduced from 2.75 to 2.5
+p369
+aag161
+a(lp370
+VShackles cooldown reduced from 16 to 10
+p371
+aVShackles total damage increased from 120/160/160/200 to 120/180/240/300
+p372
+aVFixed  Shackles sometimes not granting True Sight over the target properly
+p373
+aa(lp374
+VFixed  Last Word countdown debuff not being purgeable
+p375
+aa(lp376
+VConcussive Shot cooldown reduced from 20/18/16/14 to 18/16/14/12
+p377
+aVMystic Flare no longer splits its damage over Spell Immune heroes
+p378
+aa(lp379
+VSprint now provides phased movement
+p380
+aVSprint cooldown reduced from 23 to 17
+p381
+aVSprint duration reduced from 16 to 12
+p382
+aag161
+a(lp383
+VShrapnel delay reduced from 1.4 to 1.2 seconds
+p384
+aa(lp385
+VDesolate now works on non-hero units if they are alone
+p386
+aVDispersion now reflects damage before reductions and returns it as the same damage type\u000a\u000aRather than as Pure damage after reduction
+p387
+aa(lp388
+VGreater Bash now uses pseudo random chance
+p389
+aa(lp390
+VStatic Remnant mana cost increased from 70/80/90/100 to 100
+p391
+aVStatic Remnant unobstructed vision reduced from 800 to 600
+p392
+aVBall Lightning base mana cost increased from 15 + 7% to 30 + 8%
+p393
+aa(lp394
+VBase intelligence increased by 2
+p395
+aVGreat Cleave damage increased from 20/35/50/65 to 30/42/54/66%
+p396
+aa(lp397
+VTechies' mines are no longer triggered when destroyed
+p398
+aVTechies' mines can now be destroyed using  Quelling Blade/ Battle Fury\u000a\u000aSame range as wards: 450
+p399
+aVTechies' mines now provide 10 Gold for destroying them
+p400
+aVLand Mines cooldown and mana cost reduced by 50%
+p401
+aVLand Mines damage reduced by 50%
+p402
+aVLand Mines no longer have a max count
+p403
+aVLand Mines and  Stasis Traps no longer block neutral spawns
+p404
+aVLand Mines no longer stack exactly on top of each other\u000a\u000a They can still be very close though
+p405
+aag161
+a(lp406
+VTemporarily removed from Captains Mode
+p407
+aVReflection now affects all enemy heroes in a 900 area of effect\u000a\u000aWill not affect units that are in fog or who are invisible
+p408
+aVReflection attack and move slow reduced from 60% to 25%
+p409
+aVReflection cooldown rescaled from 22/18/14/10 to 22/20/18/16
+p410
+aVConjure Image illusions are known as illusions to enemies\u000a\u000aSimilar to  Dark Seer's  Wall of Replica illusions
+p411
+aVConjure Image cast point reduced from 0.5 to 0.15
+p412
+aVMetamorphosis now emits a 900 range aura that affects his nearby illusions, causing them to match his current form
+p413
+aVSunder cast range increased from 325 to 550
+p414
+aVSunder minimum health increased from 20 to 25%
+p415
+aa(lp416
+VGush armor reduction increased from 2/3/4/5 to 3/4/5/6
+p417
+aa(lp418
+VWhirling Death cooldown reduced from 8 to 6
+p419
+aa(lp420
+VRearm channel time reduced from 3/2/1 to 3/1.5/0.75
+p421
+aa(lp422
+VBase strength increased from 24 to 26
+p423
+aVBase intelligence increased from 14 to 17
+p424
+aa(lp425
+VLeech Seed mana cost reduced from 140 to 100/110/120/130
+p426
+aa(lp427
+VFervor attack speed per stack increased from 16/22/28/34 to 20/25/30/35
+p428
+aa(lp429
+VIce Shards mana cost increased from 90 to 100/105/110/115
+p430
+aVSnowball max launch time reduced from 4 to 3 seconds
+p431
+aVFrozen Sigil no longer goes through Spell Immunity
+p432
+aVAghanim's Scepter  Walrus Kick now deals 200 damage
+p433
+aa(lp434
+VAghanim's Scepter no longer improves Flesh Golem\u000a\u000aPreviously it increased damage amplification and heal
+p435
+aVAghanim's Scepter now increases Decay's strength steal from 4 to 10
+p436
+aVTombstone Zombies attack damage reduced from 41 to 35
+p437
+aVTombstone now requires a constant number of attacks to be destroyed: 3/4/5/7 from heroes\u000a\u000a6/8/10/14 attacks from creeps
+p438
+aVSoul Rip can now restore 1/2/3/4 health to Tombstone
+p439
+aa(lp440
+VStrength gain reduced from 2.9 to 2.7
+p441
+aVEarthshock cooldown reduced from 6 to 5
+p442
+aVEnrage  Fury Swipes multiplier reduced from 1.5/2/2.5 to 1.5/1.75/2
+p443
+aVEnrage cooldown reduced from 50/45/40 to 50/40/30
+p444
+aa(lp445
+VAgility gain increased from 2.8 to 3.3
+p446
+aVBase movement speed increased from 295 to 300
+p447
+aa(lp448
+VPoison Sting damage increased from 5/10/15/20 to 6/12/18/24
+p449
+aVPoison Sting now works normally on illusions
+p450
+aVPoison Nova damage per second reduced from 36/58/81 to 30/55/80 ( Aghanim's Scepter damage per second increased from 58/81/108 to 60/85/110)
+p451
+aVPoison Nova duration increased from 12/14/15/16 to 16\u000a\u000aDuration is no longer increased by  Aghanim's Scepter
+p452
+aa(lp453
+VAgility growth increased from 2.5 to 2.9
+p454
+aVCorrosive Skin slow no longer pierces Spell Immunity
+p455
+aa(lp456
+VFamiliar's Stone Form area of effect increased from 325 to 340
+p457
+aa(lp458
+VGolems can no longer be destroyed by Purge
+p459
+aa(lp460
+VThe Swarm mana cost rescaled from 100 to 70/80/90/100
+p461
+aVThe Swarm cooldown reduced from 36/33/30/27 to 35/30/25/20
+p462
+aag161
+a(lp463
+VWinter's Curse no longer affects Spell Immune enemies in the area, but it still affects the primary target
+p464
+aa(lp465
+VDeath Ward damage increased from 60/90/120 to 60/105/150\u000a\u000a Aghanim's Scepter now deals the same damage
+p466
+aVDeath Ward no longer bounces once at level 3\u000a\u000aStill bounces 4 times with  Aghanim's Scepter
+p467
+aa(lp468
+VBase damage increased by 7
+p469
+aVVampiric Aura does not show the healing effect if Wraith King is in the fog of war or is invisible to the enemy
+p470
+aVReincarnation  Aghanim's Scepter ally death delay increased from 5 to 7 seconds
+p471
+aVReincarnation  Aghanim's Scepter ally wraith aura now remains active during Reincarnation
+p472
+aag161
+a(lp473
+I1
+aI1
+aa(lp474
+I1
+aI1
+aa(lp475
+I1
+aa(lp476
+I-1
+aI-1
+aa(lp477
+I1
+aa(lp478
+a(lp479
+I1
+aI1
+aI1
+aa(lp480
+I-1
+aI1
+aI1
+aa(lp481
+a(lp482
+I-1
+aI-1
+aa(lp483
+I-1
+aI-1
+aa(lp484
+I1
+aI1
+aI1
+aa(lp485
+I1
+aa(lp486
+a(lp487
+I1
+aa(lp488
+I1
+aI-1
+aa(lp489
+I1
+aI1
+aI1
+aa(lp490
+I1
+aa(lp491
+a(lp492
+I1
+aa(lp493
+I-1
+aa(lp494
+I1
+aa(lp495
+I1
+aa(lp496
+I1
+aI-1
+aa(lp497
+I1
+aI1
+aa(lp498
+I1
+aa(lp499
+I1
+aI1
+aa(lp500
+I1
+aa(lp501
+I-1
+aa(lp502
+I1
+aI1
+aI1
+aI1
+aa(lp503
+a(lp504
+I1
+aI1
+aa(lp505
+I1
+aI-1
+aI1
+aa(lp506
+a(lp507
+I-1
+aI-1
+aa(lp508
+I-1
+aa(lp509
+I1
+aI1
+aI1
+aI1
+aa(lp510
+a(lp511
+I1
+aI1
+aI1
+aa(lp512
+I1
+aa(lp513
+I1
+aa(lp514
+I1
+aI1
+aI-1
+aI1
+aa(lp515
+I1
+aI1
+aI1
+aI1
+aa(lp516
+I-1
+aI-1
+aI-1
+aa(lp517
+I1
+aI1
+aI1
+aa(lp518
+I1
+aI1
+aa(lp519
+I-1
+aI-1
+aa(lp520
+I1
+aa(lp521
+I1
+aI1
+aI1
+aa(lp522
+I1
+aI1
+aI1
+aa(lp523
+I1
+aI1
+aa(lp524
+I1
+aa(lp525
+I1
+aa(lp526
+a(lp527
+I1
+aI1
+aa(lp528
+I1
+aI1
+aI1
+aI-1
+aa(lp529
+I-1
+aI1
+aa(lp530
+I1
+aI1
+aI1
+aI-1
+aI1
+aI1
+aa(lp531
+I1
+aI-1
+aI1
+aI1
+aa(lp532
+I1
+aa(lp533
+I1
+aI1
+aI1
+aa(lp534
+I1
+aI1
+aI1
+aI1
+aa(lp535
+I1
+aI-1
+aa(lp536
+I1
+aI1
+aI1
+aI-1
+aI1
+aI-1
+aI-1
+aI1
+aa(lp537
+I1
+aI1
+aI-1
+aI1
+aI-1
+aa(lp538
+I1
+aI1
+aa(lp539
+I-1
+aI-1
+aa(lp540
+I1
+aa(lp541
+I1
+aI1
+aI1
+aa(lp542
+I1
+aI1
+aI1
+aa(lp543
+I1
+aI1
+aI1
+aa(lp544
+I1
+aa(lp545
+I1
+aa(lp546
+I1
+aa(lp547
+a(lp548
+I1
+aI1
+aa(lp549
+I1
+aa(lp550
+a(lp551
+I1
+aI1
+aI1
+aa(lp552
+I-1
+aa(lp553
+I1
+aI1
+aa(lp554
+I1
+aI1
+aI-1
+aa(lp555
+a(lp556
+I1
+aa(lp557
+I1
+aI1
+aa(lp558
+I-1
+aa(lp559
+I-1
+aI-1
+aI-1
+aa(lp560
+I1
+aI1
+aa(lp561
+I-1
+aI-1
+aI-1
+aI1
+aI-1
+aI1
+aI-1
+aI-1
+aa(lp562
+a(lp563
+I-1
+aI1
+aI-1
+aI-1
+aI-1
+aI1
+aI1
+aI1
+aI1
+aa(lp564
+I1
+aa(lp565
+I1
+aa(lp566
+I1
+aa(lp567
+I1
+aI1
+aa(lp568
+I1
+aa(lp569
+I1
+aa(lp570
+I-1
+aI-1
+aI-1
+aI1
+aa(lp571
+I-1
+aI1
+aI-1
+aI-1
+aI1
+aa(lp572
+I-1
+aI1
+aI-1
+aI1
+aa(lp573
+I1
+aI1
+aa(lp574
+I1
+aI1
+aI1
+aI1
+aa(lp575
+I1
+aI-1
+aa(lp576
+I1
+aa(lp577
+I1
+aa(lp578
+I1
+aI1
+aa(lp579
+a(lp580
+I-1
+aa(lp581
+I1
+aI-1
+aa(lp582
+I1
+aI1
+aI1
+aI1
+aa(lp583
+atbag12
+(g13
+(I0
+tS'b'
+tRp584
+(I1
+(I1
+I111
+tg16
+I00
+(lp585
+(lp586
+Vcooldown reduced from 5 to 4.5
+p587
+aVAghanim's Scepter damage redirection increased from 35% to 50%
+p588
+aa(lp589
+Vdamage increased from 12/16/20/24 to 15/20/25/30
+p590
+aVBounty Rune bonus increased from 4x to 5x
+p591
+aa(lp592
+Vcast range increased from 700 to 700/800/900/1000
+p593
+aa(lp594
+Vdistance rescaled from 1000/1075/1150/1150 to 925/1000/1075/1150
+p595
+aVstun rescaled from 0.1/0.2/0.3 to 0.15
+p596
+aa(lp597
+g160
+aa(lp598
+a(lp599
+Vcooldown reduced from 10 to 8
+p600
+aVmana cost reduced from 100/125/150/175 to 70/100/130/160
+p601
+aVFixed   sometimes not granting True Sight over the target properly
+p602
+aa(lp603
+Vdamage over time reduced from 50 per second to 25/30/35/40
+p604
+aVdamage duration increased from 1/2/3/4 to 3/4/5/6
+p605
+aVAdded  Aghanim's Scepter upgrade:   grabs its target, as well as the target's nearest allied hero within 400 range. The secondary target is tethered to the first. Also causes Lasso to deal 100 damage per second.
+p606
+aa(lp607
+a(lp608
+Vscaling changed from 100%->25% to 75%->25%
+p609
+aVheal reduced from 25% to 19/21/23/25%
+p610
+aa(lp611
+Vnow provides vision only of the target rather than the area around it
+p612
+aVallied bonus gold reduced from 50/100/150 to 40/80/120
+p613
+aa(lp614
+VStorm's Dispel Magic area of effect increased from 200 to 600
+p615
+aVStorm's Dispel Magic cooldown reduced from 8 to 6 seconds
+p616
+aVEarth's Hurl Boulder cooldown reduced from 7 to 5 seconds
+p617
+aa(lp618
+Vpassive   damage threshold reduced from 250 to 230
+p619
+aa(lp620
+a(lp621
+Vstrength as bonus damage increased from 26/34/42/50% to 30/42/54/66%
+p622
+aa(lp623
+Vnow lowers the target's armor by 5 for 8 seconds whenever it crits \u000a\u000aApplies before the damage happens, like  Desolator. Can be applied by illusions, but multiple instances do not stack. Only triggers when critical strike
+p624
+aVcritical damage reduced from 150/200/250/300% to 125/175/225/275%
+p625
+aa(lp626
+Vslow/damage amplification increased from 14/18/22/26% to 15/20/25/30%
+p627
+aV(Damage) mana cost reduced from 175 to 90/100/110/120
+p628
+aV(Damage) cooldown reduced from 24 to 16
+p629
+aa(lp630
+Vcooldown reduced from 45/40/35/30 to 40/35/30/25
+p631
+aa(lp632
+a(lp633
+Vcooldown reduced from 15 to 13
+p634
+aa(lp635
+g196
+aa(lp636
+Vmana cost reduced from 100/115/130/145 to 100
+p637
+aa(lp638
+Vspirits increased from 6/13/21 to 8/14/21
+p639
+aa(lp640
+Vcooldown reduced from 16 to 12/11/10/9
+p641
+aVnow only provides vision over the target itself
+p642
+aa(lp643
+Vdamage/heal increased from 12/18/24/30 to 12/24/36/48
+p644
+aVcooldown reduced from 8 to 7
+p645
+aa(lp646
+Vdebuff duration increased from 8 to 11 seconds
+p647
+aa(lp648
+Vbonus damage increased from 18/24/30/36% to 20/26/32/38%
+p649
+aVcooldown reduced from 120 to 100
+p650
+aa(lp651
+Vis now placed in front of you when double-clicking it
+p652
+aa(lp653
+Vdamage reduced from 125/175/225/275 to 110/160/210/260
+p654
+aa(lp655
+Varea of effect increased from 475 to 500
+p656
+aVmana cost rescaled from 110 to 80/90/100/110
+p657
+aVattack damage per creep increased from 3/6/9/12 to 6/9/12/15
+p658
+aVaura sticky duration increased from 0.5 to 1.0
+p659
+aa(lp660
+a(lp661
+Vwisp count increased from 3/5/7/9 to 4/6/8/10
+p662
+aVis no longer a Unique Attack Modifier
+p663
+aa(lp664
+Vcast time reduced from 0.2 to 0.1
+p665
+aVarea of effect reduced from 600 to 550
+p666
+aVradius increased from 400 to 420
+p667
+aa(lp668
+a(lp669
+Vdamage per rocket reduced from 8/13/18/23 to 7/12/17/22\u000a\u000aTotal damage reduced from 240/390/540/690 to 210/360/510/660
+p670
+aVslow no longer pierces Spell Immunity
+p671
+aa(lp672
+VMagic Resistance per stack reduced from 4/5/6/7 to 3/4/5/6
+p673
+aa(lp674
+g234
+aVspeed/damage bonus increased from 20->80 to 30->90
+p675
+aVAghanim's Scepter now adds one level to the stats provided by  ,  , and   on all d spells
+p676
+aVMax level   now retains its normal location targeting UI \u000a\u000aRather than it being changed to a no target cast at a certain level. This does not affect how the ability itself works.
+p677
+aa(lp678
+a(lp679
+V's fiery wave now moves at the same speed as its icy wave: 850 to 1050
+p680
+aVdamage increased from 16/26/56/76 to 20/40/60/80
+p681
+aVrange increased from 1100 to 1200
+p682
+aa(lp683
+Vdamage increased from 80/100/120/140 to 80/105/130/155
+p684
+aa(lp685
+Vspell cooldown reduction increased from 1/2/3/4 to 2/3/4/5
+p686
+aa(lp687
+Vdamage increased from 15/30/45/60 to 20/35/50/65
+p688
+aVcast range rescaled from 350/550/750/1000 to 400/600/800/1000
+p689
+aVcooldown rescaled from 19/16/13/10 to 26/20/14/8
+p690
+aVcast point reduced from 0.4 to 0.3
+p691
+aa(lp692
+g252
+aVcooldown reduced from 18 to 15
+p693
+ag254
+aVFixed Legion Commander sometimes auto-attacking nearby units after   ends instead of continuing to attack the dueled target
+p694
+aa(lp695
+g257
+aVjump distance reduced from 650 to 475
+p696
+aVdamage reduced from 80/140/200/260 to 50/100/150/200
+p697
+aa(lp698
+Vno longer splits XP with enemies
+p699
+aVprojectile speed increased from 750 to 850
+p700
+aVattack speed slow increased from 20 to 30 \u000a\u000aNow matches move speed slow
+p701
+aa(lp702
+Vcooldown reduced from 19 to 16
+p703
+aVand  Control can now be used on Ancient Creeps
+p704
+aa(lp705
+Vdamage reduced from 120/160/200/240 to 80/120/160/200
+p706
+aVdamage reduced from 450/675/950 to 450/650/850
+p707
+aa(lp708
+VAghanim's Scepter upgrade area of effect increased from 200 to 300
+p709
+aa(lp710
+Vcooldown reduced from 180/160/140/120 to 120
+p711
+aVbonus damage increased from 60/90/120 to 90/120/150
+p712
+aVbonus armor increased from 6/12/18 to 10/15/20
+p713
+aa(lp714
+g277
+aVcooldown reduced from 160/150/140 to 140
+p715
+aVAghanim's Scepter beam count increased from 6/10/14 to 6/12/18
+p716
+aa(lp717
+g281
+aVcritical strike chance increased from 30% to 30/35/40%
+p718
+aa(lp719
+Vcooldown reduced from 12 to 8
+p720
+aa(lp721
+Vdamage and mana steal boost per jump increased from 25% to 35%
+p722
+aa(lp723
+a(lp724
+g288
+aVsecondary strike search radius increased from 325 to 425
+p725
+aa(lp726
+g291
+aVdamage rescaled from 20/40/60/80 to 50/60/70/80
+p727
+aVHybrid no longer hides Morphling or restricts its usage when a   is out
+p728
+aVHybrids are visibly known to enemies\u000a\u000aSimilar to  Dark Seer's   illusions
+p729
+aa(lp730
+Vdamage rescaled from 130/160/190/220 to 100/140/180/220
+p731
+aVAghanim's Scepter heal increased from 6% to 8%
+p732
+aa(lp733
+Vcast time reduced from 0.5 to 0.35
+p734
+aVmana cost reduced from 100/120/140/160 to 70/90/110/130
+p735
+aVTreants movement speed increased from 300 to 325
+p736
+aVTreants vision reduced from 1200 to 1000
+p737
+ag303
+aVAghanim's Scepter now applies a 4 second buff on the units it hits, which will spawn the extra treant if the unit dies during that time
+p738
+aa(lp739
+Vdamage increased from 75/125/200/275 to 125/175/225/275
+p740
+aVno longer affects ancient creeps
+p741
+aVhealth regen increased from 1/2/3/4 to 1/2/3/6
+p742
+aVmana regen increased from 2/4/6/10 to 2/4/6/12
+p743
+aa(lp744
+g311
+aa(lp745
+VBurrow   cooldown reduced from 9 to 7
+p746
+aVBurrow   and   bonus range increased from 50% to 75%
+p747
+aVduration increased from 25/35/50 to 40/50/60
+p748
+aa(lp749
+g317
+aVattack speed bonus increased from 20/30/40/50 to 30/40/50/60
+p750
+aVcan now be cast on towers
+p751
+aVFixed     not affecting nearby Spell Immune allies \u000a\u000aCould already target them directly
+p752
+aa(lp753
+Vcast point reduced from 0.4 to 0.25
+p754
+aVstickiness reduced from 2 to 1
+p755
+aa(lp756
+g325
+ag326
+ag327
+ag328
+ag329
+ag330
+ag331
+ag332
+aa(lp757
+g334
+aVnow always removes 40% of affected heroes' max mana\u000a\u000aInstead of 75% of current mana only when under the threshold
+p758
+aVmana loss no longer pierces Spell Immunity\u000a\u000aMatches its damage behavior
+p759
+aVcast range increased from 600/650/700 to 700
+p760
+aVcast range is no longer increased with  Aghanim's Scepter
+p761
+aa(lp762
+Vnow applies your attack's on-hit effects\u000a\u000aDoes not guarantee a proc if the effect is chance-based
+p763
+aVno longer has a 0.75 second delay
+p764
+aa(lp765
+g343
+ag344
+aa(lp766
+Vmax health damage per second increased from 1/2/3/4% to 1.25/2.5/3.75/5%\u000a\u000aHeal per second is half these values
+p767
+aa(lp768
+Vspeed increased from 600 to 650\u000a\u000aTravel distance increased from 1800 to 1950 to keep the total duration the orb is alive the same
+p769
+aVcooldown reduced from 12 to 11 seconds
+p770
+aVcooldown reduced from 85 to 75
+p771
+aa(lp772
+Vdamage rescaled from 35/60/85/110 to 30/60/90/120
+p773
+aVmove slow increased from 20/22/24/26% to 27%
+p774
+aVFixed   sometimes not granting True Sight over the target properly
+p775
+aa(lp776
+g356
+aVis now placed at the target location using a 150 cast range ability\u000a\u000aInstead of placing 150 units in front of his facing direction. Using double click will immediately place it infront of you.
+p777
+aVdamage/steal per second increased from 150/185/220 to 150/200/250
+p778
+aa(lp779
+Vdamage reduced from 290/390/490 to 290/380/470 ( Aghanim's Scepter damage reduced from 325/450/575 to 325/440/555)
+p780
+aa(lp781
+Vnow drains damage smoothly over its duration rather than every second
+p782
+aa(lp783
+Vhealth regen increased from 4/5/6/7 to 6/8/10/12
+p784
+aa(lp785
+a(lp786
+Vdebuff expire damage increased from 30% to 50%
+p787
+aVdebuff slow increased from 20% to 25%
+p788
+aa(lp789
+Vcooldown reduced from 2.75 to 2.5
+p790
+aa(lp791
+a(lp792
+Vcooldown reduced from 16 to 10
+p793
+aVtotal damage increased from 120/160/160/200 to 120/180/240/300
+p794
+aVFixed   sometimes not granting True Sight over the target properly
+p795
+aa(lp796
+VFixed   countdown debuff not being purgeable
+p797
+aa(lp798
+Vcooldown reduced from 20/18/16/14 to 18/16/14/12
+p799
+aVno longer splits its damage over Spell Immune heroes
+p800
+aa(lp801
+Vnow provides phased movement
+p802
+aVcooldown reduced from 23 to 17
+p803
+aVduration reduced from 16 to 12
+p804
+aa(lp805
+a(lp806
+Vdelay reduced from 1.4 to 1.2 seconds
+p807
+aa(lp808
+Vnow works on non-hero units if they are alone
+p809
+aVnow reflects damage before reductions and returns it as the same damage type\u000a\u000aRather than as Pure damage after reduction
+p810
+aa(lp811
+VGreater  now uses pseudo random chance
+p812
+aa(lp813
+Vmana cost increased from 70/80/90/100 to 100
+p814
+aVunobstructed vision reduced from 800 to 600
+p815
+aVbase mana cost increased from 15 + 7% to 30 + 8%
+p816
+aa(lp817
+g395
+aVdamage increased from 20/35/50/65 to 30/42/54/66%
+p818
+aa(lp819
+g398
+ag399
+ag400
+ag401
+ag402
+ag403
+aVLand Mines and  Stasis s no longer block neutral spawns
+p820
+ag405
+aa(lp821
+a(lp822
+g407
+aVnow affects all enemy heroes in a 900 area of effect\u000a\u000aWill not affect units that are in fog or who are invisible
+p823
+aVattack and move slow reduced from 60% to 25%
+p824
+aVcooldown rescaled from 22/18/14/10 to 22/20/18/16
+p825
+aVillusions are known as illusions to enemies\u000a\u000aSimilar to  Dark Seer's   illusions
+p826
+aVcast point reduced from 0.5 to 0.15
+p827
+aVnow emits a 900 range aura that affects his nearby illusions, causing them to match his current form
+p828
+aVcast range increased from 325 to 550
+p829
+aVminimum health increased from 20 to 25%
+p830
+aa(lp831
+Varmor reduction increased from 2/3/4/5 to 3/4/5/6
+p832
+aa(lp833
+Vcooldown reduced from 8 to 6
+p834
+aa(lp835
+Vchannel time reduced from 3/2/1 to 3/1.5/0.75
+p836
+aa(lp837
+g423
+ag424
+aa(lp838
+Vmana cost reduced from 140 to 100/110/120/130
+p839
+aa(lp840
+Vattack speed per stack increased from 16/22/28/34 to 20/25/30/35
+p841
+aa(lp842
+Vmana cost increased from 90 to 100/105/110/115
+p843
+aVmax launch time reduced from 4 to 3 seconds
+p844
+aVno longer goes through Spell Immunity
+p845
+ag433
+aa(lp846
+VAghanim's Scepter no longer improves \u000a\u000aPreviously it increased damage amplification and heal
+p847
+aVAghanim's Scepter now increases 's strength steal from 4 to 10
+p848
+aVZombies attack damage reduced from 41 to 35
+p849
+aVnow requires a constant number of attacks to be destroyed: 3/4/5/7 from heroes\u000a\u000a6/8/10/14 attacks from creeps
+p850
+aVcan now restore 1/2/3/4 health to
+p851
+aa(lp852
+g441
+aVcooldown reduced from 6 to 5
+p853
+aVmultiplier reduced from 1.5/2/2.5 to 1.5/1.75/2
+p854
+aVcooldown reduced from 50/45/40 to 50/40/30
+p855
+aa(lp856
+g446
+ag447
+aa(lp857
+Vdamage increased from 5/10/15/20 to 6/12/18/24
+p858
+aVnow works normally on illusions
+p859
+aVdamage per second reduced from 36/58/81 to 30/55/80 ( Aghanim's Scepter damage per second increased from 58/81/108 to 60/85/110)
+p860
+aVduration increased from 12/14/15/16 to 16\u000a\u000aDuration is no longer increased by  Aghanim's Scepter
+p861
+aa(lp862
+g454
+aVslow no longer pierces Spell Immunity
+p863
+aa(lp864
+g457
+aa(lp865
+g459
+aa(lp866
+Vmana cost rescaled from 100 to 70/80/90/100
+p867
+aVcooldown reduced from 36/33/30/27 to 35/30/25/20
+p868
+aa(lp869
+a(lp870
+g464
+aa(lp871
+Vdamage increased from 60/90/120 to 60/105/150\u000a\u000a Aghanim's Scepter now deals the same damage
+p872
+aVno longer bounces once at level 3\u000a\u000aStill bounces 4 times with  Aghanim's Scepter
+p873
+aa(lp874
+g469
+aVdoes not show the healing effect if Wraith King is in the fog of war or is invisible to the enemy
+p875
+aVAghanim's Scepter ally death delay increased from 5 to 7 seconds
+p876
+aVAghanim's Scepter ally wraith aura now remains active during
+p877
+aa(lp878
+atba(lp879
+g8
+(g9
+(dp880
+g11
+g12
+(g13
+(I0
+tS'b'
+tRp881
+(I1
+(I2
+tg16
+I00
+(lp882
+g21
+ag22
+atbsg25
+NstRp883
+ag8
+(g9
+(dp884
+g11
+g12
+(g13
+(I0
+tS'b'
+tRp885
+(I1
+(I4
+tg16
+I00
+(lp886
+g18
+ag19
+ag20
+ag23
+atbsg25
+NstRp887
+ag8
+(g9
+(dp888
+g11
+g12
+(g13
+(I0
+tS'b'
+tRp889
+(I1
+(I1
+tg16
+I00
+(lp890
+g24
+atbsg25
+NstRp891
+a(dp892
+S'0.14.1'
+p893
+(dp894
+S'axes'
+p895
+g7
+sS'blocks'
+p896
+(lp897
+(dp898
+S'mgr_locs'
+p899
+c__builtin__
+slice
+p900
+(I3
+I5
+I1
+tRp901
+sS'values'
+p902
+g33
+sa(dp903
+g899
+g12
+(g13
+(I0
+tS'b'
+tRp904
+(I1
+(I4
+tg30
+I00
+S'\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00'
+tbsg902
+g34
+sa(dp905
+g899
+g900
+(I6
+I7
+I1
+tRp906
+sg902
+g584
+sasstbb.

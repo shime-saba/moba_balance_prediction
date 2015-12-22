@@ -1,0 +1,110 @@
+Abaddon	47	0.6%
+Alchemist	1096	13.8%
+Ancient Apparition	36	0.5%
+Anti-Mage	90	1.1%
+Axe	78	1%
+Bane	102	1.3%
+Batrider	39	0.5%
+Beastmaster	35	0.4%
+Bloodseeker	171	2.2%
+Bounty Hunter	37	0.5%
+Brewmaster	11	0.1%
+Bristleback	69	0.9%
+Broodmother	278	3.5%
+Centaur Warrunner	12	0.2%
+Chaos Knight	19	0.2%
+Chen	34	0.4%
+Clinkz	25	0.3%
+Clockwerk	52	0.7%
+Crystal Maiden	44	0.6%
+Dark Seer	887	11.2%
+Dazzle	1086	13.7%
+Death prophet	109	1.4%
+Distruptor	0	0%
+Doom	2564	32.3%
+Dragon Knight	11	0.1%
+Drow Ranger	32	0.4%
+Earth Spirit	1327	16.7%
+Earthshaker	23	0.3%
+Elder Titan	48	0.6%
+Ember Spirit	265	3.3%
+Enchantress	48	0.6%
+Enigma	17	0.2%
+Faceless Void	407	5.1%
+Gyrocopter	124	1.6%
+Huskar	6743	85.1%
+Invoker	22	0.3%
+Io	62	0.8%
+Jakiro	16	0.2%
+Juggernaut	27	0.3%
+Keeper of the Light	33	0.4%
+Kunkka	16	0.2%
+Legion Commander	27	0.3%
+Leshrac	68	0.9%
+Lich	15	0.2%
+Lifestealer	106	1.3%
+Lina	46	0.6%
+Lion	0	0%
+Lone Druid	102	1.3%
+Luna	27	0.3%
+Lycan	94	1.2%
+Magnus	0	0%
+Medusa	105	1.3%
+Meepo	319	4%
+Mirana	16	0.2%
+Morphling	33	0.4%
+Naga Siren	27	0.3%
+Nature's prophet	23	0.3%
+Necrophos	25	0.3%
+Night Stalker	380	4.8%
+Nyx assassin	0	0%
+Ogre Magi	0	0%
+Omniknight	25	0.3%
+Oracle	600	7.6%
+Outworld Devourer	358	4.5%
+Phantom Assassin	447	5.6%
+Phantom Lancer	51	0.6%
+Phoenix	21	0.3%
+Puck	91	1.1%
+Pudge	34	0.4%
+Pugna	39	0.5%
+Queen of Pain	460	5.8%
+Razor	11	0.1%
+Riki	443	5.6%
+Rubick	43	0.5%
+Sand King	106	1.3%
+Shadow Demon	34	0.4%
+Shadow Fiend	1613	20.3%
+Shadow Shaman	39	0.5%
+Silencer	38	0.5%
+Skywrath mage	27	0.3%
+Slardar	540	6.8%
+Slark	33	0.4%
+Sniper	46	0.6%
+Spectre	54	0.7%
+Spirit breaker	26	0.3%
+Storm Spirit	181	2.3%
+Sven	11	0.1%
+Techies	365	4.6%
+Templar Assassin	299	3.8%
+Terrorblade	61	0.8%
+Tidehunter	11	0.1%
+Timbersaw	17	0.2%
+Tinker	59	0.7%
+Tiny	135	1.7%
+Treat protector	16	0.2%
+Troll Warlord	68	0.9%
+Tusk	1371	17.3%
+Undying	413	5.2%
+Ursa	19	0.2%
+Vengeful Spirit	11	0.1%
+Venomancer	13	0.2%
+Viper	20	0.3%
+Visage	19	0.2%
+Warlock	31	0.4%
+Weaver	89	1.1%
+Windranger	584	7.4%
+Winter Wyvern	3085	38.9%
+Witch Doctor	21	0.3%
+Wraith King	71	0.9%
+Zeus	73	0.9%
