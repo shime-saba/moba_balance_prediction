@@ -61,7 +61,10 @@ def build_df(hero_change_dict, hero_name_set, patch_name):
 def df_from_patch_query(page, hero_name_set, patch_name):
     '''
     INPUT: patch page url as string, set of acceptable hero names, patch label as string
-    OUTPUT: dataframe of hero | list of changes (text) | patch label
+    OUTPUT: dataframe of hero | list of change texts | patch label ('6.84' etc.)
+
+    The html tag search here is admittedly idiosyncratic but appears to perform
+    as desired for all patch pages.
     '''
     r = requests.get('https://dota2.gamepedia.com/{0}'.format(page))
     soup = BeautifulSoup(r.content, 'html.parser')

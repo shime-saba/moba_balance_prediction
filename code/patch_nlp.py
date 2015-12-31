@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import cPickle as pickle
 import random
+import re
 from nltk import word_tokenize
 from nltk import ngrams
 from nltk.corpus import stopwords
@@ -27,12 +28,18 @@ def process_numbers(text):
     groups are identified as runs of numbers or percents separated by / or ->
 
     For example, the output of "damage increased from 5/10/15/20 to 10/20/30/40"
-    would be (10+20+30+40)/(5+10+15+20) = 0.5
+    would be (10+20+30+40)/(5+10+15+20) = 2
+
+    The regex is maybe too specific to observed cases, and errs on the side of
+    catching too much, but it performs well enough.
     '''
-    numbers = re.findall(r'([\d\/\.%\->x]+\s.{2,13}\s[\d\/\.%\->x]+)', text)
+    numbers = re.findall(r'([\d\-][\d\/\.%\->x]+\s.{2,13}\s[\d\/\.%\->x]+)', text)
     if len(numbers) > 0:
         output = numbers[0]
-        numbers = numbers[0].replace('%', '').replace('->', '/').replace('x', '').split()
+        numbers = numbers[0].replace('->', '/').replace('%', '').replace('x', '').split()
+        if '-' in numbers[0]:
+            numbers[0] = numbers[0].replace('-', '')
+            numbers[-1] = numbers[-1].replace('-', '')
         start_vals = np.array(numbers[0].split('/')).astype(float)
         end_vals = np.array(numbers[-1].split('/')).astype(float)
         ratio = end_vals.mean() / start_vals.mean()
@@ -44,7 +51,7 @@ def add_ratios(text_list):
     '''
     helper function for get_info_from_df.
     INPUT: list of strings
-    OUTPUTS:
+    OUTPUT: Two-
     (1) list of strings with "increased" or "reduced" added in before
     first instance of the word "from" according to ratio between numbers found
     in the string. If no numerical change is found, the string is untouched.
@@ -60,10 +67,16 @@ def add_ratios(text_list):
             text_split = text.split('from', 1)
             if ratio > 1:
                 if not 'increased' in text:
-                    text = text_split[0] + 'increased from' + text_split[1]
+                    if len(text_split) > 1:
+                        text = text_split[0] + 'increased from' + text_split[1]
+                    else:
+                        text += ' increased'
             elif ratio < 1:
                 if not 'reduced' in text:
-                    text = text_split[0] + 'reduced from' + text_split[1]
+                    if len(text_split) > 1:
+                        text = text_split[0] + 'reduced from' + text_split[1]
+                    else:
+                        text += ' reduced'
         text_list_ratios.append(text)
     return text_list_ratios, ratios
 
@@ -103,7 +116,7 @@ def kFold_TFIDF_CV(text_data, labels, model, n_folds=3, use_idf=True, shuffle_se
     OUTPUT: dictionary with accuracy and auc scores for the given model
 
     the purpose of this function is to perform kfold cross-validation of TFIDF
-    data without the TFIDF matrices with test/holdout data.
+    data without contaminating the TFIDF matrices with test/holdout data.
     '''
     text_label_zip = zip(text_data, labels)
     if shuffle_seed:
