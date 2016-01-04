@@ -1,0 +1,739 @@
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/alchemist_sb.png"></div><br style="clear: left;"><b>Alchemist</b>
+  <ul>
+	<li>Greevil's Greed Bounty Rune multiplier rescaled from 5x to 3/4/5/6x</li>
+	<li>Fixed Greevil's Greed granting full gold during Buyback gold penalty phase</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/bane_sb.png"></div><br style="clear: left;"><b>Bane</b>
+  <ul>
+	<li>Movement speed reduced from 315 to 310</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/batrider_sb.png"></div><br style="clear: left;"><b>Batrider</b>
+  <ul>
+	<li>Base HP regeneration increased from 0.25 to 2.0</li>
+	<li>Flamebreak mana cost reduced from 140 to 110/120/130/140</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/beastmaster_sb.png"></div><br style="clear: left;"><b>Beastmaster</b>
+  <ul>
+	<li>Wild Axes no longer has unit targeting</li>
+	<li>Call of the Wild cooldown rescaled from 40 to 42/38/34/30</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/bloodseeker_sb.png"></div><br style="clear: left;"><b>Bloodseeker</b>
+<ul>
+	<li>Blood Rite cooldown rescaled from 29/26/23/20 to 30/25/20/15</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/bounty_hunter_sb.png"></div><br style="clear: left;"><b>Bounty Hunter</b>
+  <ul>
+	<li>Jinada movement and attack speed reduction increased from 25% to 25/27/29/31%</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/brewmaster_sb.png"></div><br style="clear: left;"><b>Brewmaster</b>
+  <ul>
+	<li>Drunken Haze cooldown reduced from 8 to 8/7/6/5</li>
+	<li>Primal Split's Dispel Magic damage to summons increased from 200 to 500</li>
+	<li>Primal Split's Dispel Magic cooldown reduced from 6 to 4</li>
+	<li>Primal Split's Wind Walk cooldown reduced from 7 to 5</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/bristleback_sb.png"></div><br style="clear: left;"><b>Bristleback</b>
+  <ul>
+	<li class="highlight">Added Scepter to Bristleback
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle3" onclick="$('#extended3').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended3"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended3').hide();$('#eToggle3').show();" value="- Hide details">
+			<p>Nasal Goo is no longer targeted, instead it applies Goo to all enemies around you in 600 AoE when casted</p>
+		</div>
+	</li>
+	<li>Nasal Goo mana cost reduced from 30 to 25</li>
+	<li>Quill Spray max damage increased from 400 to 450</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/broodmother_sb.png"></div><br style="clear: left;"><b>Broodmother</b>
+<ul>
+	<li>Spawn Spiderlings damage reduced from 75/150/225/300 to 70/140/210/280</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/centaur_sb.png"></div><br style="clear: left;"><b>Centaur Warrunner</b>
+  <ul>
+	<li>Return damage increased from 30/42/54/66 to 30/45/60/75%</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/chaos_knight_sb.png"></div><br style="clear: left;"><b>Chaos Knight</b>
+  <ul>
+	<li>Reality Rift bonus damage increased from 60/80/100/120 to 60/100/140/180</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/chen_sb.png"></div><br style="clear: left;"><b>Chen</b>
+  <ul>
+	<li>Base strength increased from 20 to 23</li>
+	<li>Penitence mana cost reduced from 100 to 70</li>
+	<li>Penitence duration increased from 5/6/7/8 to 8</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/clinkz_sb.png"></div><br style="clear: left;"><b>Clinkz</b>
+<ul>
+	<li>Agility growth increased from 3 to 3.3</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/rattletrap_sb.png"></div><br style="clear: left;"><b>Clockwerk</b>
+  <ul>
+	<li>Strength growth increased from 2.7 to 2.9</li>
+	<li>Power Cogs now spawn in a circle rather than a rectangle</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/crystal_maiden_sb.png"></div><br style="clear: left;"><b>Crystal Maiden</b>
+  <ul>
+	<li>Crystal Nova cooldown reduced from 13 to 12</li>
+	<li>Arcane Aura level 4 mana regen increased from 2.5/5 (allies/self) to 3/6</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/dark_seer_sb.png"></div><br style="clear: left;"><b>Dark Seer</b>
+  <ul>
+	<li>Base intelligence reduced from 27 to 25</li>
+	<li>Ion Shell is now purgeable</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/dazzle_sb.png"></div><br style="clear: left;"><b>Dazzle</b>
+  <ul>
+	<li>Poison Touch mana cost reduced from 100 to 70</li>
+	<li>Shallow Grave cast point increased from 0.3 to 0.35</li>
+	<li>Shallow Grave mana cost increased from 140/130/120/110 to 150</li>
+	<li>Weave no longer provides 800 flying vision. Now provides ground vision for the AoE of the ability for 3 seconds</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/death_prophet_sb.png"></div><br style="clear: left;"><b>Death Prophet</b>
+  <ul>
+	<li class="highlight">Temporarily removed from Captain's Mode
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">
+			Due to hero redesigns, the following heroes have been removed from Captain's Mode for a short period:
+			Death Prophet, Doom, Faceless Void, Lone Druid, Riki and Winter Wyvern.
+			<p>Most of these will return to Captain's Mode in a subsequent 6.86b/c patch.</p>
+		</div>
+	</li>
+	<li class="highlight">Replaced Witchcraft with a new ability, Spirit Siphon
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle4" onclick="$('#extended4').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended4"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended4').hide();$('#eToggle4').show();" value="- Hide details">
+			<p>Spirit Siphon<br>=======</p>
+			<p>Creates a spirit link between you and the target, draining 20 + 1/1.8/2.6/3.4% Max HP per second and slowing movement speed by 6/10/14/18%. Lasts 4 seconds. </p>
+			<p>Cast Range: 500</p>
+			<p>Buffer Distance: 300</p>
+			<p>Has 1/2/3/4 charges, 45 second replenish<a href="#" class="ChangeDetailsTrigger">[?]</a><span class="ChangeDetailsPopup">A unit cannot be affected by multiple instances at the same time. Cannot target Roshan.</span><br>Mana cost: 70/65/60/55</p>
+		</div>
+	</li>
+	<li>Base movement speed increased from 280 to 310</li>
+	<li>Crypt Swarm cooldown reduced from 8 to 8/7/6/5</li>
+	<li>Silence cooldown reduced from 15 to 15/14/13/12</li>
+	<li>Exorcism spirit count increased from 8/14/21 to 8/16/24</li>
+	<li>Exorcism spawn rate decreased from 1 ghost per 0.1 seconds to 0.3 seconds </li>
+  </ul>
+
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/doom_bringer_sb.png"></div><br style="clear: left;"><b>Doom</b>
+  <ul>
+	<li class="highlight">Temporarily removed from Captain's Mode
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">
+			Due to hero redesigns, the following heroes have been removed from Captain's Mode for a short period:
+			Death Prophet, Doom, Faceless Void, Lone Druid, Riki and Winter Wyvern.
+			<p>Most of these will return to Captain's Mode in a subsequent 6.86b/c patch.</p>
+		</div>
+	</li>
+	<li class="highlight">Replaced Level Death with a new ability, Infernal Blade
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle5" onclick="$('#extended5').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended5"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended5').hide();$('#eToggle5').show();" value="- Hide details">
+			<p>Infernal Blade<br>=======</p>
+			<p>Passive/autocast attack ability. Ministuns for 0.3 seconds and applies a 4 second burn that deals 40 + 1.25/2.5/3.75/5% Max HP as magic damage.</p>
+			<p>Cooldown: 16/12/8/4<br>Mana cost: 40</p>
+		</div>
+	</li>
+	<li>Base Attack Time increased from 1.7 to 2.0</li>
+	<li>Scorched Earth damage/heal reduced from 12/23/34/45 to 10/20/30/40</li>
+	<li>Scorched Earth movement speed from 16% to 14%</li>
+	<li>Doom cooldown increased from 100 to 125</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/dragon_knight_sb.png"></div><br style="clear: left;"><b>Dragon Knight</b>
+  <ul>
+	<li>Dragon Blood HP regen increased from 2/3/4/5 to 3/6/9/12</li>
+	<li>Elder Dragon Form Frost AoE increased from 250 to 300 <a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">Same AoE as the splash damage</div></li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/drow_ranger_sb.png"></div><br style="clear: left;"><b>Drow Ranger</b>
+  <ul>
+	<li class="highlight">Added Scepter to Drow Ranger
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle6" onclick="$('#extended6').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended6"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended6').hide();$('#eToggle6').show();" value="- Hide details">
+			<p>Marksmanship now causes her attacks to splinter on the target and split into two arrows affecting two random units in a 375 radius. The splintered arrows deal 50% damage each. Primary target still takes full damage.</p>
+			<p>The split arrows act as normal attacks, carrying all attack modifiers.</p>
+		</div>
+	</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/earth_spirit_sb.png"></div><br style="clear: left;"><b>Earth Spirit</b>
+  <ul>
+	<li class="highlight">Enabled Earth Spirit in Captain's Mode</li>
+	<li>Intelligence growth reduced from 2.4 to 2.1</li>
+	<li>Boulder Smash stun AoE reduced from 200 to 160</li>
+	<li>Geomagnetic Grip can now only pull allied heroes when using Scepter</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/elder_titan_sb.png"></div><br style="clear: left;"><b>Elder Titan</b>
+  <ul>
+	<li>Earth Splitter damage rescaled from 35% to 30/40/50%</li>
+	<li>Earth Splitter mana cost rescaled from 175 to 125/175/225</li>
+	<li>Earth Splitter's physical damage component is no longer reduced by Damage Block</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/ember_spirit_sb.png"></div><br style="clear: left;"><b>Ember Spirit</b>
+  <ul>
+	<li>Fire Remnants no longer give vision</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/enchantress_sb.png"></div><br style="clear: left;"><b>Enchantress</b>
+  <ul>
+	<li>Enchant cooldown reduced from 30/25/20/15 to 30/24/18/12</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/enigma_sb.png"></div><br style="clear: left;"><b>Enigma</b>
+  <ul>
+	<li>Eidolon movement speed increased from 250/250/260/260 to 260/280/300/320</li>
+	<li>Malefice damage increased from 25/40/55/70 to 30/50/70/90</li>
+	<li>Black Hole cooldown reduced from 200/190/180 to 200/180/160</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/faceless_void_sb.png"></div><br style="clear: left;"><b>Faceless Void</b>
+  <ul>
+	<li class="highlight">Temporarily removed from Captain's Mode
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">
+			Due to hero redesigns, the following heroes have been removed from Captain's Mode for a short period:
+			Death Prophet, Doom, Faceless Void, Lone Druid, Riki and Winter Wyvern.
+			<p>Most of these will return to Captain's Mode in a subsequent 6.86b/c patch.</p>
+		</div>
+	</li>
+	<li class="highlight">Replaced Backtrack with a new ability, Time Dilation
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle7" onclick="$('#extended7').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended7"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended7').hide();$('#eToggle7').show();" value="- Hide details">
+			<p>Time Dilation<br>=======</p>
+			<p>Applies a debuff to all nearby enemies (650 AoE) for 6/7/8/9 seconds. Causes time to be frozen on all enemy abilities, causing their cooldowns to make no progress while they have this debuff. Slows movement and attack speed by 4/6/8/10% for each locked ability.</p>
+			<p>Cooldown: 34/28/22/16<br>Mana cost: 50</p>
+		</div>
+	</li>
+	<li>Timewalk no longer slows units</li>
+	<li>Timewalk now undoes any damage taken in the last 2 seconds</li>
+	<li>Timewalk cooldown rescaled from 19/17/15/13 to 24/18/12/6</li>
+	<li>Timewalk mana cost reduced from 90 to 40</li>
+	<li>Timewalk range reduced from 700/900/1100/1300 to 550</li>
+	<li>Timewalk cast point reduced from 0.35 to 0.2</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/gyrocopter_sb.png"></div><br style="clear: left;"><b>Gyrocopter</b>
+  <ul>
+	<li>Call Down's first missile damage reduced from 250/300/350 to 220/285/350</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/huskar_sb.png"></div><br style="clear: left;"><b>Huskar</b>
+  <ul>
+	<li>Berserker's Blood bonuses are provided linearly from full until 10% HP (rather than stepwise at 7% increments)</li>
+	<li>Berserker's Blood maximum magic resistance reduced from 42/56/70/84% to 20/30/40/50%</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/invoker_sb.png"></div><br style="clear: left;"><b>Invoker</b>
+  <ul>
+	<li>Invoker now starts with Invoke Level 1 at the beginning of the game</li>
+	<li>Invoke now has the standard 6/11/16 leveling</li>
+	<li>Level 25 invoker (since he is now missing an ability level) has an attribute bonus ability that grants 6 all stats</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/jakiro_sb.png"></div><br style="clear: left;"><b>Jakiro</b>
+  <ul>
+	<li>Base damage increased by 7</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/keeper_of_the_light_sb.png"></div><br style="clear: left;"><b>Keeper of the Light</b>
+  <ul>
+	<li>Chakra Magic cooldown reduction increased from 2/3/4/5 to 3/4/5/6</li>
+	<li>Chakra Magic buff duration increased from 12 to 15 seconds</li>
+	<li>Chakra Magic now restores and increases mana capacity by 75/150/225/300</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/kunkka_sb.png"></div><br style="clear: left;"><b>Kunkka</b>
+  <ul>
+	<li class="highlight">Added Scepter to Kunkka
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle8" onclick="$('#extended8').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended8"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended8').hide();$('#eToggle8').show();" value="- Hide details">
+			<p>Ghost Ship now drags enemies within a 200 AoE of it towards the crash site. It now starts from where you are, rather than behind you, lands in the same position it normally would have.</p>
+			<p>Enemies are still able to perform actions while being pulled by the Ghost Ship. <a href="#" class="ChangeDetailsTrigger">[?]</a><span class="ChangeDetailsPopup">Works similiar to Drow Ranger's Gust knockback</span></p>
+		</div>
+	</li>
+	<li>Torrent now gives your team vision over target area immediately upon cast, rather than just when triggering</li>
+	<li>Tidebringer is now an autocast ability, will only trigger if turned on or cast directly on the target</li>
+	<li>Tidebringer damage bonus increased from 20/35/50/65 to 25/40/55/70</li>
+	<li>Tidebringer AoE from rescaled 500/500/500/600 to 450/500/550/600</li>
+	<li>Ghost Ship mana cost reduced from 150/200/250 to 125/175/225</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/legion_commander_sb.png"></div><br style="clear: left;"><b>Legion Commander</b>
+  <ul>
+	<li>Moment of Courage cooldown reduced from 2.7/2.1/1.5/0.9 to 2.6/2.0/1.4/0.8</li>
+	<li>Legion Commander's Scepter now makes you and your target immune to all damage unless the source is between the Duel participants.</li>
+	<li>Legion Commander's Scepter duration is now 4.75/5.5/6.25</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/life_stealer_sb.png"></div><br style="clear: left;"><b>Lifestealer</b>
+  <ul>
+	<li>Rage attack speed bonus increased from 30/45/60/80 to 50/60/70/80</li>
+	<li>Feast damage and lifesteal increased from 4/5/6/7% to 4.5/5.5/6.5/7.5%</li>
+	<li>Infest cooldown reduced from 100 to 100/75/50 </li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/lion_sb.png"></div><br style="clear: left;"><b>Lion</b>
+  <ul>
+	<li>Earth Spike mana cost reduced from 100/120/145/170 to 100/120/140/160</li>
+	<li>Earth Spike duration increased from 1.02/1.52/2.02/2.52 to 1.1/1.6/2.1/2.6</li>
+	<li>Mana Drain reduced cooldown from 20/15/10/5 to 16/12/8/4</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/lone_druid_sb.png"></div><br style="clear: left;"><b>Lone Druid</b>
+  <ul>
+	<li class="highlight">Temporarily removed from Captain's Mode
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">
+			Due to hero redesigns, the following heroes have been removed from Captain's Mode for a short period:
+			Death Prophet, Doom, Faceless Void, Lone Druid, Riki and Winter Wyvern.
+			<p>Most of these will return to Captain's Mode in a subsequent 6.86b/c patch.</p>
+		</div>
+	</li>
+	<li class="highlight">Replaced Synergy with a new ability for Lone Druid, Savage Roar
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle9" onclick="$('#extended9').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended9"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended9').hide();$('#eToggle9').show();" value="- Hide details">
+			<p>Savage Roar<br>=======</p>
+			<p>Causes enemies in a 325 AoE around you or your bear to run away with 20% movement speed bonus for 1.2/1.6/2/2.4 seconds towards their fountain.</p>
+			<p>Cooldown: 28/24/20/16<br>Mana cost: 50</p>
+			<p>Note: An entangled hero will not be able to move still. Spirit Bear also has this ability, but the cooldown is shared with your hero.</p>
+		</div>
+	</li>
+	<li>Spirit Bear attack damage increased from 33 to 35/45/55/65</li>
+	<li>Spirit Bear movement speed increased from 320/320/330/340 to 320/330/340/350</li>
+	<li>Rabid duration increased from 10 to 18/22/26/30</li>
+	<li>Rabid movement speed increased from 5/10/15/20% to 10/15/20/25%</li>
+	<li>True Form Health Bonus increased from 250/400/600 to 300/600/900</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/luna_sb.png"></div><br style="clear: left;"><b>Luna</b>
+  <ul>
+	<li>Turn rate increased from 0.4 to 0.6</li>
+	<li>Eclipse Scepter beam interval reduced from 0.6 to 0.3</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/lycan_sb.png"></div><br style="clear: left;"><b>Lycan</b>
+  <ul>
+	<li>Lycan Wolves and Shapeshift no longer grant critical strike</li>
+	<li>Lycan Wolves now gain Cripple at level 2, granting a 20% chance to cripple the target, causing it to take 8 damage per second and lose 40 Attack Speed for 4 seconds.</li>
+	<li>Shapeshift now grants all units under your control a 40% chance for 1.4/1.6/1.8x critical strike</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/magnataur_sb.png"></div><br style="clear: left;"><b>Magnus</b>
+  <ul>
+	<li class="highlight">Added Scepter to Magnus
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle10" onclick="$('#extended10').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended10"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended10').hide();$('#eToggle10').show();" value="- Hide details">
+			<p>Changes Empower to be an allied hero aura. Affects ranged heroes for half cleave values and causes them to deal splash damage around the target in a 200 AoE. </p>
+			<p>Can still be cast on units, but does not stack.</p>
+		</div>
+	</li>
+	<li>Skewer distance increased from 750/900/1050/1200 to 900/1000/1100/1200</li>
+	<li>Skewer slow reduced from 40% to 25/30/35/40%</li>
+	<li>Skewer slow duration increased from 2.5 to 2.5/2.75/3/3.25 seconds</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/medusa_sb.png"></div><br style="clear: left;"><b>Medusa</b>
+  <ul>
+	<li>Mystic Snake no longer increases manasteal per jump</li>
+	<li>Mystic Snake manasteal is now 11/14/17/20% of total mana</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/meepo_sb.png"></div><br style="clear: left;"><b>Meepo</b>
+  <ul>
+	<li>Double Damage no longer affects all Meepo units</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/mirana_sb.png"></div><br style="clear: left;"><b>Mirana</b>
+  <ul>
+	<li>Attack range increased from 600 to 630</li>
+	<li>Starstorm radius increased from 625 to 650</li>
+	<li>Sacred Arrow now instantly kills the first unit it hits if it is a non-ancient creep</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/morphling_sb.png"></div><br style="clear: left;"><b>Morphling</b>
+  <ul>
+	<li>Adaptive Strike base damage increased from 50/60/70/80 to 100</li>
+	<li>Adaptive Strike mana cost reduced from 100 to 100/90/80/70</li>
+	<li>Morph rate increased from 2/4/6/10 per second to 2/4/8/16</li>
+	<li>Morph now shifts in intervals of 1 rather than 2 <a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">This change doesn't affect rate of change, just smoothness</div></li>
+	<li>Hybrid cooldown reduced from 140 to 120</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/naga_siren_sb.png"></div><br style="clear: left;"><b>Naga Siren</b>
+  <ul>
+	<li>Base Intelligence increased from 18 + 1.95 to 21 + 2.0</li>
+  </ul>
+
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/furion_sb.png"></div><br style="clear: left;"><b>Nature's Prophet</b>
+  <ul>
+	<li>Base intelligence increased by 4</li>
+	<li>Treant damage increased from 28 to 32
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><span class="ChangeDetailsPopup">
+			This means Greater Treant damage is increased from 84 to 96
+		</span>
+	</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/necrolyte_sb.png"></div><br style="clear: left;"><b>Necrophos</b>
+<ul>
+	<li>Base armor increased by 1</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/night_stalker_sb.png"></div><br style="clear: left;"><b>Night Stalker</b>
+  <ul>
+	<li>Void slow at night reduced from 4 to 2.5/3/3.5/4 seconds</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_sb.png"></div><br style="clear: left;"><b>Nyx Assassin</b>
+  <ul>
+	<li>Nyx Impale duration increased from 1.27/1.77/2.27/2.77 to 1.6/2.0/2.4/2.8</li>
+	<li>Spiked Carapace cooldown reduced from 23/20/17/14 to 22/18/14/10</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/ogre_magi_sb.png"></div><br style="clear: left;"><b>Ogre Magi</b>
+  <ul>
+	<li>Base health regen increased from 2.5 to 3.5</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/oracle_sb.png"></div><br style="clear: left;"><b>Oracle</b>
+  <ul>
+	<li class="highlight">Enabled Oracle in Captain's Mode</li>
+	<li>Fate's Edict cooldown rescaled from 12 to 16/13/10/7</li>
+	<li>Fate's Edict duration reduced from 3/4/5/6 to 3/3.5/4/4.5 </li>
+	<li>Fate's Edict cast range rescaled from 700 to 500/600/700/800</li>
+	<li>Fortune's End mana cost reduced from 130 to 110</li>
+	<li>Fortune's End can now target allies <a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">Does not root or hurt the ally, but purges and applies the effect in the area</div></li>
+	<li class="highlight">False Promise no longer continuously dispels after the initial cast <a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">It previously continuously removed all debuffs including stuns</div></li>
+	<li>False Promise duration increased from 6/7/8 to 7/8/9</li>
+	<li>False Promise cooldown rescaled from 80/60/40 to 90/60/30</li>
+	<li>False Promise mana cost reduced from 200 to 100</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/obsidian_destroyer_sb.png"></div><br style="clear: left;"><b>Outworld Devourer</b>
+  <ul>
+	<li class="highlight">Reworked how Astral Imprisonment works
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle11" onclick="$('#extended11').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended11"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended11').hide();$('#eToggle11').show();" value="- Hide details">
+			<p>Astral Imprisonment now deals damage to enemies in an area around the target when it ends. The target itself will also take damage, if it is an enemy. Deals 75/150/225/300 magic damage. Affects a 400 area. <a href="#" class="ChangeDetailsTrigger">[?]</a><span class="ChangeDetailsPopup">You are only hurt once by this AoE with Scepter.</span></p>
+			<p>No longer steals intelligence.</p>
+			<p>Can now be targeted on creeps.</p>
+		</div>
+	</li>
+	<li>Astral Imprisonment cooldown rescaled from 18/16/14/12 to 20/17/14/11</li>
+	<li>Astral Imprisonment cast range rescaled from 500 to 450/500/550/600</li>
+	<li>Astral Imprisonment duration increased from 1/2/3/4 to 4</li>
+	<li>Essence Aura AoE reduced from 1000 to the standard 900 aura radius</li>
+	<li>Arcane Orb now steals 0/1/2/3 intelligence per hit for 40 seconds (heroes only)</li>
+	<li>Outworld Devourer intelligence growth reduced from 3.3 to 2.7</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/phantom_assassin_sb.png"></div><br style="clear: left;"><b>Phantom Assassin</b>
+  <ul>
+	<li>Base Intelligence increased from 13 + 1 to 15 + 1.4</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/phoenix_sb.png"></div><br style="clear: left;"><b>Phoenix</b>
+  <ul>
+	<li>Sun Ray turn rate increased from 20 to 25</li>
+	<li>Supernova damage per second increased from 60/80/100 to 60/90/120</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/puck_sb.png"></div><br style="clear: left;"><b>Puck</b>
+  <ul>
+	<li>Illusory Orb mana cost reduced from 150 to 80/100/120/140</li>
+	<li>Illusory Orb cooldown increased from 11 to 14/13/12/11</li>
+	<li>Waning Rift cooldown reduced from 16 to 16/15/14/13</li>
+	<li>Waning Rift no longer only silences heroes</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/pudge_sb.png"></div><br style="clear: left;"><b>Pudge</b>
+ <ul>
+   <li class="highlight">Reworked Scepter on Pudge
+	   <input type="button" class="ChangeDetailsEToggle" id="eToggle12" onclick="$('#extended12').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended12"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended12').hide();$('#eToggle12').show();" value="- Hide details">
+		   <p>Reduces cooldown of Meat Hook to 4 seconds and increases damage from 360 to 475.</p>
+		   <p>Note: No longer grants previous Scepter bonuses.</p>
+	   </div>
+   </li>
+   <li>Dismember damage from 75/125/175 to 60/90/120 +30/40/50% of strength</li>
+   <li>Dismember now heals you for the damage it does</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/pugna_sb.png"></div><br style="clear: left;"><b>Pugna</b>
+  <ul>
+	<li>Decrepify no longer slows allies</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/queenofpain_sb.png"></div><br style="clear: left;"><b>Queen of Pain</b>
+  <ul>
+	<li>Scream of Pain damage reduced from 85/165/225/300 to 75/150/225/300</li>
+	<li>Sonic Wave travel speed reduced from 1100 to 900</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/riki_sb.png"></div><br style="clear: left;"><b>Riki</b>
+  <ul>
+	<li class="highlight">Temporarily removed from Captain's Mode
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">
+			Due to hero redesigns, the following heroes have been removed from Captain's Mode for a short period:
+			Death Prophet, Doom, Faceless Void, Lone Druid, Riki and Winter Wyvern.
+			<p>Most of these will return to Captain's Mode in a subsequent 6.86b/c patch.</p>
+		</div>
+	</li>
+	<li class="highlight">Reworked Permanent Invisibility to include Backstab
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle13" onclick="$('#extended13').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended13"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended13').hide();$('#eToggle13').show();" value="- Hide details">
+			<p>Permanent Invisibility<br>============</p>
+			<p>Riki grants 0.4/0.6/0.8/1.0 damage when attacking from behind.</p>
+			<p>Invisibility Fade Time: 6/5/4/3 seconds</p>
+			<p>Note: No longer grants 6/8/10/12 HP regeneration</p>
+		</div>
+	</li>
+	<li class="highlight">Blink Strike back to basic ability without charges
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle14" onclick="$('#extended14').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended14"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended14').hide();$('#eToggle14').show();" value="- Hide details">
+			<p>Damage: 20/40/60/80<br>Cooldown: 16/12/8/4<br>Mana cost: 50</p>
+		</div>
+	</li>
+	<li class="highlight">Added a new ultimate for Riki, Tricks of the Trade
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle15" onclick="$('#extended15').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended15"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended15').hide();$('#eToggle15').show();" value="- Hide details">
+			<p>Tricks of the Trade<br>============</p>
+			<p>Riki phases out of the world for up to 3/4/5 seconds, attacking every enemy from behind in a 450 area around him. He attacks once when phasing out and then once per second while being phased out.
+				<a href="#" class="ChangeDetailsTrigger">[?]</a><span class="ChangeDetailsPopup">Can be cancelled any time.</span>
+			</p>
+			<p>Cooldown: 90/80/70<br>Mana cost: 75<br>Cast Point: 0.4</p>
+		</div>
+	</li>
+	<li>Strength growth reduced from 2.0 to 1.6</li>
+	<li>Agility growth reduced from 2.9 to 2.2</li>
+	<li>Base armor reduced by 1</li>
+	<li>Smoke Screen no longer slows turn rates</li>
+  </ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/rubick_sb.png"></div><br style="clear: left;"><b>Rubick</b>
+  <ul>
+	<li>Fade Bolt attack damage reduction increased from 14/20/26/32 to 20/25/30/35</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/sand_king_sb.png"></div><br style="clear: left;"><b>Sand King</b>
+  <ul>
+	<li class="highlight">Reworked Scepter on Sand King
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle16" onclick="$('#extended16').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended16"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended16').hide();$('#eToggle16').show();" value="- Hide details">
+			<p>Doubles Burrowstrike cast range and applies Caustic Finale poison to heroes</p>
+			<p>Note: No longer grants previous Scepter bonuses.</p>
+		</div>
+	</li>
+	<li>Base strength increased from 18 to 21</li>
+	<li>Caustic Finale slow increased from 25% to 30%</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/shadow_demon_sb.png"></div><br style="clear: left;"><b>Shadow Demon</b>
+<ul>
+	<li>Disruption illusions duration from 5/6/7/8 to 6/8/10/12 seconds</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/nevermore_sb.png"></div><br style="clear: left;"><b>Shadow Fiend</b>
+  <ul>
+	<li class="highlight">Added Scepter to Shadow Fiend
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle17" onclick="$('#extended17').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended17"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended17').hide();$('#eToggle17').show();" value="- Hide details">
+			<p>Requiem of Souls waves now return back to Shadow Fiend dealing 40% damage on the way back.</p>
+			<p>All of the damage the Requiem does to heroes on its way back heals you.</p>
+		</div>
+	</li>
+	<li>Base armor reduced by 1</li>
+	<li>Shadow Raze mana cost increased from 75 to 90</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/shadow_shaman_sb.png"></div><br style="clear: left;"><b>Shadow Shaman</b>
+  <ul>
+	<li>Shackles total damage increased from 120/180/240/300 to 120/200/280/360</li>
+	<li>Mass Serpent Wards require 2 hits to destroy <a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">Previously had 135/150/150 hp</div></li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/silencer_sb.png"></div><br style="clear: left;"><b>Silencer</b>
+ <ul>
+	<li class="highlight">Replaced Curse of the Silent with a new ability, Arcane Curse
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle18" onclick="$('#extended18').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended18"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended18').hide();$('#eToggle18').show();" value="- Hide details">
+			<p>Arcane Curse<br>=======</p>
+			<p>Targets an area, causes enemies to take damage over time. Anytime they cast a spell, the duration of the debuff is increased. If an enemy affected by this debuff is silenced, the debuff will pause (no damage and no time elapses).</p>
+			<p>Duration: 7 seconds<br>Stacking Duration: 4 seconds (anytime a spell is cast, this is added to the duration)<br>DPS: 14/21/28/35</p>
+			<p>Cooldown: 18/16/14/12<br>Mana cost: 75/95/115/135<br>Radius: 425</p>
+			<p>Affects Creeps.</p>
+			<p>Note: Spell cast means the same stuff as CotS rules were, stuff that procs magic stick and isn't an item.</p>
+		</div>
+	</li>
+   <li>Glaives of Wisdom is no longer a Unique Attack Modifier</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/skywrath_mage_sb.png"></div><br style="clear: left;"><b>Skywrath Mage</b>
+  <ul>
+	<li>Concussive Shot mana cost reduced from 110 to 95</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/slardar_sb.png"></div><br style="clear: left;"><b>Slardar</b>
+  <ul>
+	<li>Amplify Damage now only reveals the target rather than the area around it</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/storm_spirit_sb.png"></div><br style="clear: left;"><b>Storm Spirit</b>
+ <ul>
+	<li>Electric Vortex mana cost reduced from 100/110/120/130 to 85</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/sven_sb.png"></div><br style="clear: left;"><b>Sven</b>
+ <ul>
+   	<li>Base damage increased by 4</li>
+   	<li>God's Strength Scepter aura bonus damage increased from 50/75/100% to 75/100/125%</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/templar_assassin_sb.png"></div><br style="clear: left;"><b>Templar Assassin</b>
+  <ul>
+	<li>Refraction is now always visible</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/terrorblade_sb.png"></div><br style="clear: left;"><b>Terrorblade</b>
+  <ul>
+	<li class="highlight">Enabled Terrorblade in Captain's Mode</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/tidehunter_sb.png"></div><br style="clear: left;"><b>Tidehunter</b>
+  <ul>
+	<li class="highlight">Added Scepter to Tidehunter
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle19" onclick="$('#extended19').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended19"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended19').hide();$('#eToggle19').show();" value="- Hide details">
+			<p>Causes Gush to become a ground targeted wave ability that travels for 1800 range.</p>
+			<p>AoE: 240<br>Projectile speed: 1500<br>Cooldown: 7</p>
+		</div>
+	</li>
+	<li>Anchor Smash cast time reduced from 0.5 to 0.4</li>
+	<li>Ravage stun duration rescaled from 2.02/2.32/2.77 to 2.0/2.4/2.8</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/shredder_sb.png"></div><br style="clear: left;"><b>Timbersaw</b>
+  <ul>
+	<li>Whirling Death debuff duration increased from 7 to 11</li>
+	<li>Whirling Death mana cost decreased from 70/80/90/100 to 70</li>
+	<li>Reactive Armor duration rescaled from 16 to 14/16/18/20</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/tinker_sb.png"></div><br style="clear: left;"><b>Tinker</b>
+  <ul>
+	<li>Laser cast time improved from 0.53 to 0.4</li>
+	<li>Laser cast range increased from 550 to 650</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/tiny_sb.png"></div><br style="clear: left;"><b>Tiny</b>
+  <ul>
+	<li>Craggy Exterior now triggers on attacks landing, rather than on start</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/treant_sb.png"></div><br style="clear: left;"><b>Treant Protector</b>
+  <ul>
+	<li>Leech Seed mana cost reduced from 100/110/120/130 to 80/95/110/125</li>
+	<li>Overgrowth AoE increased from 675 to 800</li>
+	<li>Scepter Overgrowth damage and vision AoE increased from 700 to 800</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/troll_warlord_sb.png"></div><br style="clear: left;"><b>Troll Warlord</b>
+  <ul>
+	<li>Fervor reduced from 20/25/30/35 to 15/20/25/30</li>
+	<li>Fervor max stacks increased from 4 to 6</li>
+	<li>Ranged Whirling Axes cooldown reduced from 20/19/18/17 to 20/18/16/14</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/tusk_sb.png"></div><br style="clear: left;"><b>Tusk</b>
+  <ul>
+	<li>Movement speed reduced from 305 to 300</li>
+	<li>Ice Shards damage reduced from 70/140/210/280 to 60/120/180/240</li>
+	<li>Snowball can no longer pull units out of Blackhole or Chronosphere</li>
+	<li>Snowball gather radius reduced from 400 to 350</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/undying_sb.png"></div><br style="clear: left;"><b>Undying</b>
+  <ul>
+	<li>Tombstone Zombie damage reduced from 35 to 33</li>
+	<li>Tombstone bounty increased from 75/100/125/150 to 125/150/175/200</li>
+	<li>Tombstone no longer grants 44 XP</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/ursa_sb.png"></div><br style="clear: left;"><b>Ursa</b>
+  <ul>
+	<li class="highlight">Scepter added to Ursa
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle20" onclick="$('#extended20').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended20"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended20').hide();$('#eToggle20').show();" value="- Hide details">
+			<p>Allows you to cast your ultimate while disabled and reduces cooldown from 50/40/30 to 30/24/18 seconds.</p>
+		</div>
+	</li>
+	<li>Enrage is no longer purgeable</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/vengefulspirit_sb.png"></div><br style="clear: left;"><b>Vengeful Spirit</b>
+  <ul>
+	<li class="highlight">Added Scepter bonus to Vengeful Spirit
+		<input type="button" class="ChangeDetailsEToggle" id="eToggle21" onclick="$('#extended21').show();$(this).hide();" value="+ Show details"><div class="ChangeDetailsExtended" id="extended21"><input type="button" class="ChangeDetailsEToggle" onclick="$('#extended21').hide();$('#eToggle21').show();" value="- Hide details">
+			<p>Causes you to spawn a Vengeance Illusion when you die. The Vengeance Illusion deals 50% damage, takes 150% damage, and is able to use all of your abilities (but not items). The Vengeance Illusion lasts until she revives.</p>
+			<p>Note: Still grants previous Scepter bonuses to Netherswap.</p>
+		</div>
+	</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/venomancer_sb.png"></div><br style="clear: left;"><b>Venomancer</b>
+<ul>
+	<li>Venomous Gale cooldown reduced from 22 to 21/20/19/18</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/visage_sb.png"></div><br style="clear: left;"><b>Visage</b>
+<ul>
+	<li>Stone Form AoE increased from 340 to 350</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/warlock_sb.png"></div><br style="clear: left;"><b>Warlock</b>
+<ul>
+	<li>Base strength increased by 4</li>
+	<li>Shadow Word duration increased from 11 to 12 seconds</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/weaver_sb.png"></div><br style="clear: left;"><b>Weaver</b>
+<ul>
+	<li>Base damage increased by 3</li>
+	<li>The Swarm Beetles' Base Attack Time improved from 1.4/1.25/1.1/0.95 to 1.25/1.1/0.95/0.8</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/windrunner_sb.png"></div><br style="clear: left;"><b>Windranger</b>
+<ul>
+	<li>Shackleshot is now disjointable</li>
+	<li>Shackleshot speed increased from 1515 to 1650</li>
+	<li>Shackleshot angle reduced from 26 degrees to 23 degrees</li>
+	<li>Powershot speed no longer decreases by a small amount as it goes through units</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/winter_wyvern_sb.png"></div><br style="clear: left;"><b>Winter Wyvern</b>
+<ul>
+	<li class="highlight">Temporarily removed from Captain's Mode
+		<a href="#" class="ChangeDetailsTrigger">[?]</a><div class="ChangeDetailsPopup">
+			Due to hero redesigns, the following heroes have been removed from Captain's Mode for a short period:
+			Death Prophet, Doom, Faceless Void, Lone Druid, Riki and Winter Wyvern.
+			<p>Most of these will return to Captain's Mode in a subsequent 6.86b/c patch.</p>
+		</div>
+	</li>
+	<li>Cold Embrace cooldown increased from 17/16/15/14 to 24/21/18/15</li>
+	<li>Arctic Burn slow reduced from 25/30/35/40% to 19/26/33/40%</li>
+	<li class="highlight">Winter's Curse primary and secondary units are now immune to all damage from their enemies</li>
+	<li>Winter's Curse secondary units now have 50 attack speed bonus</li>
+	<li>Winter's Curse AoE increased increased from 400 to 500</li>
+	<li>Winter's Curse cooldown increased from 110/100/90 to 120/110/100</li>
+	<li>Winter's Curse duration increased from 2.5/3/3.5 to 3.25/4/4.75</li>
+	<li>Fixed Winter's Curse lingering if the primary target died</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/witch_doctor_sb.png"></div><br style="clear: left;"><b>Witch Doctor</b>
+<ul>
+	<li>Maledict mana cost reduced from 120 to 105/110/115/120</li>
+	<li>Maledict cast range increased from 525 to 575</li>
+</ul>
+
+<div class="ChangeNoteImage"><img src="http://cdn.dota2.com/apps/dota2/images/heroes/skeleton_king_sb.png"></div><br style="clear: left;"><b>Wraith King</b>
+<ul>
+	<li>Vampiric Aura can now be toggled to make the lifesteal for heroes only</li>
+</ul>

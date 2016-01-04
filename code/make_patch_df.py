@@ -22,17 +22,7 @@ def get_hero_names():
 
     return hero_name_set
 
-def get_abi_names(filepath):
-    '''
-    builds set of ability names to use as stopwords in remove_abi_names.
-    '''
-    with open(filepath) as f:
-        abi_json = json.load(f)
-    ability_set = set(ability['localizedName'] for ability in abi_json)
-    ability_set.remove('') # discard empty string
-    return ability_set
-
-def build_df(hero_change_dict, hero_name_set, patch_name):
+def build_df(hero_change_dict, hero_name_set, ability_set, patch_name):
     '''
     helper function; creates DataFrame to return in df_from_patch_query
     '''
@@ -56,21 +46,61 @@ def build_df(hero_change_dict, hero_name_set, patch_name):
     df_all_heroes.reset_index(inplace=True)
     df_all_heroes.drop('index', axis=1, inplace=True)
 
+    df_all_heroes['text_no_abi'] = df_all_heroes['text']\
+                                   .apply(remove_abi_names, abi_set=ability_set)
     return df_all_heroes
 
-def df_from_patch_query(page, hero_name_set, patch_name):
+def get_686_changes(soup):
+    '''
+    INPUT: BeautifulSoup of hero change html for patch 6.86
+    OUTPUT: hero:change dictionary for use by build_df
+
+    the html for patch 6.86 on dota2.gamepedia.com is distinctly different,
+    so I grabbed it from a different page, http://www.dota2.com/balanceofpower,
+    and process it here.
+    '''
+    hero_change_dict = defaultdict(list)
+    patched_heroes = [b.text for b in soup.find_all('b')]
+    for i, ul in enumerate(soup.find_all('ul')):
+        for li in ul.find_all('li'):
+            if not (li.text.startswith('Temporarily') or li.text.startswith('Enabled')):
+                hero_change_dict[patched_heroes[i]].append(li.text)
+    return hero_change_dict
+
+
+
+def df_from_patch_query(page, hero_name_set, ability_set, patch_name):
     '''
     INPUT: patch page url as string, set of acceptable hero names, patch label as string
     OUTPUT: dataframe of hero | list of change texts | patch label ('6.84' etc.)
 
-    The html tag search here is admittedly idiosyncratic but appears to perform
-    as desired for all patch pages.
+    The html tag search here is admittedly idiosyncratic, but the site I am
+    scraping does not identify its div tags very nicely.
     '''
-    r = requests.get('https://dota2.gamepedia.com/{0}'.format(page))
-    soup = BeautifulSoup(r.content, 'html.parser')
+    if patch_name != '6.86':
+        r = requests.get('https://dota2.gamepedia.com/{0}'.format(page))
+        soup = BeautifulSoup(r.content, 'html.parser')
+
+    else:
+        with open('/Users/trevorfisher/galvanize/project/moba_balance_prediction/data/686_html.txt') as f:
+            soup = BeautifulSoup(f.read(), 'html.parser')
 
     hero_change_dict = defaultdict(list)
-    for ul in soup.find('div', {'id': 'mw-content-text'}).find('div', recursive=False).findAll('ul', recursive=False):
+    if patch_name not in ['6.83', '6.86']:
+        all_uls = soup.find('div', {'id': 'mw-content-text'})\
+                      .find('div', recursive=False)\
+                      .findAll('ul', recursive=False)
+
+    elif patch_name == '6.83':
+        all_uls = soup.find('div', {'id': 'mw-content-text'})\
+                      .find_all('div', recursive=False, limit=2)[1]\
+                      .findAll('ul', recursive=False)
+    else:
+        hero_change_dict = get_686_changes(soup)
+        df = build_df(hero_change_dict, hero_name_set, ability_set, patch_name)
+        return df
+
+    for ul in all_uls:
         try:
             li = ul.find('li')
             if li.find('a')['title'] in hero_name_set:
@@ -80,8 +110,18 @@ def df_from_patch_query(page, hero_name_set, patch_name):
         except:
             continue
 
-    df = build_df(hero_change_dict, hero_name_set, patch_name)
+    df = build_df(hero_change_dict, hero_name_set, ability_set, patch_name)
     return df
+
+def get_abi_names(filepath):
+    '''
+    builds set of ability names from json to use as stopwords in remove_abi_names.
+    '''
+    with open(filepath) as f:
+        abi_json = json.load(f)
+    ability_set = set(ability['localizedName'] for ability in abi_json)
+    ability_set.remove('') # discard empty string
+    return ability_set
 
 def remove_abi_names(changelist, abi_set=None):
     '''

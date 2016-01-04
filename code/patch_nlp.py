@@ -33,15 +33,15 @@ def process_numbers(text):
     The regex is maybe too specific to observed cases, and errs on the side of
     catching too much, but it performs well enough.
     '''
-    numbers = re.findall(r'([\d\-][\d\/\.%\->x]+\s.{2,13}\s[\d\/\.%\->x]+)', text)
+    numbers = re.findall(r'([\d\-][\d\/\.%\->x]*\s.{2,13}\s[\d\/\.%\->x]+)', text)
     if len(numbers) > 0:
         output = numbers[0]
         numbers = numbers[0].replace('->', '/').replace('%', '').replace('x', '').split()
         if '-' in numbers[0]:
             numbers[0] = numbers[0].replace('-', '')
             numbers[-1] = numbers[-1].replace('-', '')
-        start_vals = np.array(numbers[0].split('/')).astype(float)
-        end_vals = np.array(numbers[-1].split('/')).astype(float)
+        start_vals = np.array(numbers[0].strip('.').split('/')).astype(float)
+        end_vals = np.array(numbers[-1].strip('.').split('/')).astype(float)
         ratio = end_vals.mean() / start_vals.mean()
         return round(ratio, 3)
     else:
@@ -108,7 +108,10 @@ def get_info_from_df(df, labeled=False, check_ratios=True, nostops=True, snowbal
     if bigrams:
         change_texts = add_bigrams(change_texts)
 
-    return change_texts, labels, ratios
+    if labeled:
+        return change_texts, ratios, labels
+    else:
+        return change_texts, ratios
 
 def kFold_TFIDF_CV(text_data, labels, model, n_folds=3, use_idf=True, shuffle_seed=None, **params):
     '''
