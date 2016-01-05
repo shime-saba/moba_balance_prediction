@@ -11,7 +11,8 @@ def get_draft_dfs(folder_path, last_patch=686):
     all_draft_dfs = {}
     for i in xrange(677, last_patch+1):
         df = pd.read_csv('{0}/drafts_{1}.csv'.format(folder_path, i))
-        df.loc[df[df['Hero']=='furion'].index[0], 'Name'] = "Nature's Prophet" # fix apostrophe
+        df.loc[df[df['Hero']=='furion'].index[0], 'Name'] = "Nature's Prophet" # add apostrophe
+        df.loc[df[df['Hero']=='antimage'].index[0], 'Name'] = "Anti-Mage" # add hyphen
         df.drop(['Hero', 'Times Picked', 'Times Banned'], axis=1, inplace=True)
         df.columns = ['hero', 'pick%', 'ban%', 'pb%', 'times_pb']
         all_draft_dfs[i] = df.copy()
@@ -38,7 +39,7 @@ def prepare_draft_dfs(drafts_dict):
         else:
             df['prev_patch_pb%'] = [None]*len(df)
 
-        df['patch'] = [patch_num]*len(df)
+        # df['patch'] = [patch_num]*len(df)
 
     return drafts_dict
 
