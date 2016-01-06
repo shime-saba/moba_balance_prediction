@@ -1,0 +1,1 @@
+1. use a network (+ pagerank) to address hero pair interactions
