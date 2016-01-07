@@ -6,7 +6,7 @@ from scipy import stats
 import sys
 
 
-class HeroWinRatePickler(object):
+class HeroWinratePickler(object):
     '''pickles hero winrates, hero pair winrates, and hero head-to-head winrates'''
     def __init__(self, data_folder_path, last_patch_num):
         self.data_folder_path = data_folder_path
@@ -21,7 +21,7 @@ class HeroWinRatePickler(object):
             df.loc[df[df['Hero']=='antimage'].index[0], 'Name'] = "Anti-Mage" # fix hyphen
             hero_wrs[i] = df[['Name', 'W', 'L', 'Win %']].set_index('Name')
 
-        self.hero_wrs = hero_wrs
+        self.hero_wrs = hero_wrs # reserved for other methods to access
         with open('{0}/{1}.pkl'.format(self.data_folder_path, pickle_name), 'w') as f:
             pickle.dump(hero_wrs, f)
 
@@ -52,7 +52,6 @@ class HeroWinRatePickler(object):
             else:
                 hero_sig = self.check_sig(hero, patch_num, pair['W'], pair['L'])
                 other_sig = self.check_sig(other, patch_num, pair['L'], pair['W'])
-
                 hero_interactions[hero].append((other, round(pair_wr - hero_solo_wr, 4), hero_sig))
                 hero_interactions[other].append((hero, round((1 - pair_wr) - other_solo_wr, 4), other_sig))
 
@@ -81,7 +80,7 @@ class HeroWinRatePickler(object):
 if __name__ == '__main__':
     data_folder_path = sys.argv[1]
     last_patch_num = sys.argv[2]
-    winrate_pickler = HeroWinRatePickler(data_folder_path, last_patch_num)
+    winrate_pickler = HeroWinratePickler(data_folder_path, last_patch_num)
     winrate_pickler.make_wr_pickle('hero_winrates')
     winrate_pickler.make_pairs_pickle('pair', 'hero_ally_pairs')
     winrate_pickler.make_pairs_pickle('counter', 'hero_counter_pairs')

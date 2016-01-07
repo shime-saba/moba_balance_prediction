@@ -20,6 +20,10 @@ def get_hero_names():
     hero_name_set.remove('Natures Prophet')
     hero_name_set.add("Nature's Prophet") # dota2.com doesn't include apostrophe
 
+    # the following heroes appear in patch notes but have no drafting data
+    hero_name_set.remove('Arc Warden')
+    hero_name_set.remove('Oracle')
+    hero_name_set.remove('Earth Spirit')
     return hero_name_set
 
 def build_df(hero_change_dict, hero_name_set, ability_set, patch_name):

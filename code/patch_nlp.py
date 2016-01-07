@@ -66,13 +66,17 @@ def add_ratios(text_list):
         if ratio:
             text_split = text.split('from', 1)
             if ratio > 1:
-                if not 'increased' in text:
+                if 'rescaled' in text:
+                    text = text.replace('rescaled', 'increased')
+                elif 'increased' not in text:
                     if len(text_split) > 1:
                         text = text_split[0] + 'increased from' + text_split[1]
                     else:
                         text += ' increased'
             elif ratio < 1:
-                if not 'reduced' in text:
+                if 'rescaled' in text:
+                    text = text.replace('rescaled', 'reduced')
+                elif 'reduced' not in text:
                     if len(text_split) > 1:
                         text = text_split[0] + 'reduced from' + text_split[1]
                     else:
