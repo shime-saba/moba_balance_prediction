@@ -42,7 +42,8 @@ def process_numbers(text):
             numbers[-1] = numbers[-1].replace('-', '')
         start_vals = np.array(numbers[0].strip('.').split('/')).astype(float)
         end_vals = np.array(numbers[-1].strip('.').split('/')).astype(float)
-        ratio = end_vals.mean() / start_vals.mean()
+        eps = 0.000001
+        ratio = (end_vals.mean()+eps) / (start_vals.mean()+eps)
         return round(ratio, 3)
     else:
         return None

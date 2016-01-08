@@ -69,6 +69,8 @@ def get_686_changes(soup):
         for li in ul.find_all('li'):
             if not (li.text.startswith('Temporarily') or li.text.startswith('Enabled')):
                 hero_change_dict[patched_heroes[i]].append(li.text)
+    del hero_change_dict['Earth Spirit']
+    del hero_change_dict['Oracle']
     return hero_change_dict
 
 

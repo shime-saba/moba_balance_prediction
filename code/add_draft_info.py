@@ -16,6 +16,10 @@ def get_draft_dfs(folder_path, last_patch=686):
         df.loc[df[df['Hero']=='antimage'].index[0], 'Name'] = "Anti-Mage" # add hyphen
         if 'unknown' in df['Hero'].values:
             df.drop(df[df['Hero']=='unknown'].index[0], inplace=True)
+        if 'earth_spirit' in df['Hero'].values:
+            df.drop(df[df['Hero']=='earth_spirit'].index[0], inplace=True)
+        if 'oracle' in df['Hero'].values:
+            df.drop(df[df['Hero']=='oracle'].index[0], inplace=True)
 
         df.drop(['Hero', 'Times Picked', 'Times Banned'], axis=1, inplace=True)
         df.columns = ['hero', 'pick%', 'ban%', 'pb%', 'times_pb']
