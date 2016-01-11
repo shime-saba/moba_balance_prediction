@@ -1,1 +1,13 @@
 1. use a network (+ pagerank) to address hero pair interactions
+
+2. add more interactions. NLP items and add hero-item interactions
+
+3. figure out other ways to use ratios
+
+4. scrape and incorporate player attitudes: sometimes it takes several patches
+   for pro play to accept/catch up to newly strong heroes, but sometimes you
+   can see in pro players' comments that they suspect a given hero to be under-
+   valued
+
+5. marketplace analogy: heroes -> products, allies -> often bought together,
+   counters -> competing products, nerfs/buffs -> price or model changes
