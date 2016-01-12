@@ -5,6 +5,7 @@ from collections import defaultdict
 import cPickle as pickle
 import json
 
+
 def get_hero_names():
     '''
     helper function for df_from_patch_query;
@@ -18,13 +19,14 @@ def get_hero_names():
             hero_name_set.add(a_tag['href'].split('/')[-2].replace('_', ' '))
 
     hero_name_set.remove('Natures Prophet')
-    hero_name_set.add("Nature's Prophet") # dota2.com doesn't include apostrophe
+    hero_name_set.add("Nature's Prophet")  # dota2.com doesn't include apostrophe
 
     # the following heroes appear in patch notes but have no drafting data
     hero_name_set.remove('Arc Warden')
     hero_name_set.remove('Oracle')
     hero_name_set.remove('Earth Spirit')
     return hero_name_set
+
 
 def build_df(hero_change_dict, hero_name_set, ability_set, patch_name):
     '''
@@ -40,7 +42,7 @@ def build_df(hero_change_dict, hero_name_set, ability_set, patch_name):
     changed_heroes_685 = set(df.hero.values)
     untouched_heroes = []
     for hero in hero_name_set:
-        if not hero in changed_heroes_685:
+        if hero not in changed_heroes_685:
             untouched_heroes.append(hero)
 
     df_all_heroes = pd.concat([df, pd.DataFrame({'hero': untouched_heroes,
@@ -54,6 +56,7 @@ def build_df(hero_change_dict, hero_name_set, ability_set, patch_name):
                                    .apply(remove_abi_names, abi_set=ability_set)
     return df_all_heroes
 
+
 def get_686_changes(soup):
     '''
     INPUT: BeautifulSoup of hero change html for patch 6.86
@@ -61,7 +64,8 @@ def get_686_changes(soup):
 
     the html for patch 6.86 on dota2.gamepedia.com is distinctly different,
     so I grabbed it from a different page, http://www.dota2.com/balanceofpower,
-    and process it here.
+    and process it here. I open an html text file instead of scraping to get
+    around a discrepancy between the 'inspect element' html view and page source
     '''
     hero_change_dict = defaultdict(list)
     patched_heroes = [b.text for b in soup.find_all('b')]
@@ -72,7 +76,6 @@ def get_686_changes(soup):
     del hero_change_dict['Earth Spirit']
     del hero_change_dict['Oracle']
     return hero_change_dict
-
 
 
 def df_from_patch_query(page, hero_name_set, ability_set, patch_name):
@@ -119,15 +122,18 @@ def df_from_patch_query(page, hero_name_set, ability_set, patch_name):
     df = build_df(hero_change_dict, hero_name_set, ability_set, patch_name)
     return df
 
+
 def get_abi_names(filepath):
     '''
-    builds set of ability names from json to use as stopwords in remove_abi_names.
+    INPUT: path to json file containing ability data
+    OUTPUT: set of ability names (to use as stopwords in remove_abi_names)
     '''
     with open(filepath) as f:
         abi_json = json.load(f)
     ability_set = set(ability['localizedName'] for ability in abi_json)
-    ability_set.remove('') # discard empty string
+    ability_set.remove('')  # discard empty string
     return ability_set
+
 
 def remove_abi_names(changelist, abi_set=None):
     '''

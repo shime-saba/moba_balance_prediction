@@ -4,6 +4,7 @@ import cPickle as pickle
 from patch_nlp import get_info_from_df
 from make_patch_df import df_from_patch_query
 
+
 def get_draft_dfs(folder_path, last_patch=686):
     '''
     INPUT: path to directory containing draft csvs, optional most recent patch
@@ -12,20 +13,21 @@ def get_draft_dfs(folder_path, last_patch=686):
     all_draft_dfs = {}
     for i in xrange(677, last_patch+1):
         df = pd.read_csv('{0}/drafts_{1}.csv'.format(folder_path, i))
-        df.loc[df[df['Hero']=='furion'].index[0], 'Name'] = "Nature's Prophet" # add apostrophe
-        df.loc[df[df['Hero']=='antimage'].index[0], 'Name'] = "Anti-Mage" # add hyphen
+        df.loc[df[df['Hero'] == 'furion'].index[0], 'Name'] = "Nature's Prophet"  # add apostrophe
+        df.loc[df[df['Hero'] == 'antimage'].index[0], 'Name'] = "Anti-Mage"  # add hyphen
         if 'unknown' in df['Hero'].values:
-            df.drop(df[df['Hero']=='unknown'].index[0], inplace=True)
+            df.drop(df[df['Hero'] == 'unknown'].index[0], inplace=True)
         if 'earth_spirit' in df['Hero'].values:
-            df.drop(df[df['Hero']=='earth_spirit'].index[0], inplace=True)
+            df.drop(df[df['Hero'] == 'earth_spirit'].index[0], inplace=True)
         if 'oracle' in df['Hero'].values:
-            df.drop(df[df['Hero']=='oracle'].index[0], inplace=True)
+            df.drop(df[df['Hero'] == 'oracle'].index[0], inplace=True)
 
         df.drop(['Hero', 'Times Picked', 'Times Banned'], axis=1, inplace=True)
         df.columns = ['hero', 'pick%', 'ban%', 'pb%', 'times_pb']
         all_draft_dfs[i] = df.copy()
 
     return all_draft_dfs
+
 
 def add_prev_pbs(drafts_dict):
     '''
@@ -49,7 +51,12 @@ def add_prev_pbs(drafts_dict):
 
     return drafts_dict
 
+
 def add_prev_wrs(drafts_dict, data_folder_path):
+    '''
+    INPUT: dictionary of draft dataframes, path to data folder
+    OUTPUT: same dictionary with previous patch winrates added to dataframes
+    '''
     with open('{0}/hero_winrates.pkl'.format(data_folder_path)) as f:
         hero_wrs_dict = pickle.load(f)
     for patch_num, df in drafts_dict.iteritems():
@@ -67,7 +74,13 @@ def add_prev_wrs(drafts_dict, data_folder_path):
 
     return drafts_dict
 
+
 def add_prev_hero_pairs(drafts_dict, data_folder_path):
+    '''
+    INPUT: dictionary of draft dataframes, path to data folder
+    OUTPUT: same dictionary with lists of hero pairings and counters
+            added to dataframes (for more info, see hero_interactions.py)
+    '''
     with open('{0}/hero_ally_pairs.pkl'.format(data_folder_path)) as f_allies:
         hero_allies_dict = pickle.load(f_allies)
     with open('{0}/hero_counter_pairs.pkl'.format(data_folder_path)) as f_counters:
@@ -94,7 +107,6 @@ def add_prev_hero_pairs(drafts_dict, data_folder_path):
     return drafts_dict
 
 
-
 def get_patch_dfs(patch_url_dict, hero_name_set, ability_set, tfidf_train, model):
     '''
     INPUT: addresses of patches, sets of hero and ability names, trained tfidf
@@ -108,7 +120,7 @@ def get_patch_dfs(patch_url_dict, hero_name_set, ability_set, tfidf_train, model
             texts, ratios = get_info_from_df(df, labeled=False)
 
             tfmat_test = tfidf_train.transform(texts)
-            model_output = np.round(model.predict_proba(tfmat_test.toarray())[:,1], 4)
+            model_output = np.round(model.predict_proba(tfmat_test.toarray())[:, 1], 4)
 
             counter = 0
             predictions = []

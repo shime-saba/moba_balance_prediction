@@ -14,32 +14,50 @@ class HeroWinratePickler(object):
         self.hero_wrs = None
 
     def make_wr_pickle(self, pickle_name='hero_winrates'):
+        '''
+        INPUT: desired name for output pickle file
+        pickle form: dictionary of patch number: dataframe of hero|# wins|# losses|win %
+        '''
         hero_wrs = {}
         for i in xrange(677, self.last_patch_num+1):
-            df = pd.read_csv('{0}/hero_stats/heroes_{1}.csv'.format(self.data_folder_path, i))
-            df.loc[df[df['Hero']=='furion'].index[0], 'Name'] = "Nature's Prophet" # fix apostrophe
-            df.loc[df[df['Hero']=='antimage'].index[0], 'Name'] = "Anti-Mage" # fix hyphen
+            df = pd.read_csv('{0}/hero_stats/heroes_{1}.csv'\
+                             .format(self.data_folder_path, i))
+            df.loc[df[df['Hero'] == 'furion'].index[0], 'Name'] = "Nature's Prophet"  # fix apostrophe
+            df.loc[df[df['Hero'] == 'antimage'].index[0], 'Name'] = "Anti-Mage"  # fix hyphen
             hero_wrs[i] = df[['Name', 'W', 'L', 'Win %']].set_index('Name')
 
-        self.hero_wrs = hero_wrs # reserved for other methods to access
+        self.hero_wrs = hero_wrs  # reserved for other methods to access
         with open('{0}/{1}.pkl'.format(self.data_folder_path, pickle_name), 'w') as f:
             pickle.dump(hero_wrs, f)
 
     def check_sig(self, hero, patch_num, pair_wins, pair_losses, threshold=0.1):
+        '''
+        the results from this method are not currently being used as a feature.
+        INPUT: hero name, patch number, number of wins and losses with other hero, threshold (p-value)
+        OUTPUT: boolean for whether pairing with other hero significantly
+                changes winrate.
+        '''
         hero_wr_df = self.hero_wrs[patch_num]
         solo_wins = hero_wr_df.loc[hero]['W']
         solo_losses = hero_wr_df.loc[hero]['L']
         contingency_table = np.array([[pair_wins, pair_losses], [solo_wins, solo_losses]])
         return stats.chi2_contingency(contingency_table)[1] < threshold
 
-
     def one_patch_interactions(self, pair_type, patch_num, interaction_df):
+        '''
+        helper function for make_pairs_pickle
+        INPUT: type of interaction (ally/enemy), patch number, patch dataframe
+        OUTPUT: dictionary of lists of interactions of form
+                hero: [(other hero, joint/head-to-head winrate, significance), ...]
+        '''
         patch_hero_wrs = self.hero_wrs[patch_num]
         hero_interactions = defaultdict(list)
         for _, pair in interaction_df.iterrows():
             hero, other, pair_wr = pair['Name'], pair['Name.1'], pair['Win %']
-            hero = hero.replace('Natures Prophet', "Nature's Prophet").replace('Anti Mage', 'Anti-Mage')
-            other = other.replace('Natures Prophet', "Nature's Prophet").replace('Anti Mage', 'Anti-Mage')
+            hero = hero.replace('Natures Prophet', "Nature's Prophet")
+            hero = hero.replace('Anti Mage', 'Anti-Mage')
+            other = other.replace('Natures Prophet', "Nature's Prophet")
+            other = other.replace('Anti Mage', 'Anti-Mage')
             hero_solo_wr = patch_hero_wrs.loc[hero]['Win %']
             other_solo_wr = patch_hero_wrs.loc[other]['Win %']
 
@@ -58,6 +76,10 @@ class HeroWinratePickler(object):
         return hero_interactions
 
     def make_pairs_pickle(self, pair_type, pickle_name):
+        '''
+        INPUT: type of pair interaction, desired filename for output pickle
+        pickle form: dictionary of patch number: hero interaction dictionaries
+        '''
         if pair_type not in ['pair', 'counter']:
             print 'argument pair_type must be either \'pair\' or \'counter\''
             return
@@ -65,7 +87,7 @@ class HeroWinratePickler(object):
         hero_pairs_by_patch = {}
         for i in xrange(677, self.last_patch_num+1):
             df = pd.read_csv('{0}/{1}_stats/{1}s_{2}.csv'\
-                   .format(self.data_folder_path, pair_type, i))
+                             .format(self.data_folder_path, pair_type, i))
             hero_pairs_by_patch[i] = df
 
         all_patch_interaction_dicts = {}

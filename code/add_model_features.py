@@ -1,7 +1,13 @@
 import pandas as pd
 import numpy as np
 
+
 def add_pair_features(df):
+    '''
+    INPUT: one patch's dataframe
+    OUTPUT: same dataframe with composite scores for size/direction of changes
+            to allies and counters added for each hero
+    '''
     df = df.copy()
     composite_ally_change = np.zeros(len(df))
     composite_counter_change = np.zeros(len(df))
@@ -9,11 +15,11 @@ def add_pair_features(df):
         allies = row['prev_patch_allies']
         counters = row['prev_patch_counters']
         for ally in allies:
-            ally_pred = df[df['hero']==ally[0]]['avg_pred'].values[0]
+            ally_pred = df[df['hero'] == ally[0]]['avg_pred'].values[0]
             if ally[1] > 0 and not np.isnan(ally_pred):
                 composite_ally_change[i] += ally[1] * ally_pred
         for counter in counters:
-            counter_pred = df[df['hero']==counter[0]]['avg_pred'].values[0]
+            counter_pred = df[df['hero'] == counter[0]]['avg_pred'].values[0]
             if not np.isnan(counter_pred):
                 composite_counter_change[i] += counter[1] * counter_pred
 
@@ -21,7 +27,14 @@ def add_pair_features(df):
     df['composite_counter_change'] = composite_counter_change
     return df
 
+
 def count_pred_values(df):
+    '''
+    INPUT: one patch's dataframe
+    OUTPUT: same dataframe with columns added that give, for each hero,
+            the number of patch changes of probability 0-0.4, 0.4-0.6, etc. of
+            being an improvement for that hero
+    '''
     df = df.copy()
     num_changes_0_4 = np.zeros(len(df))
     num_changes_4_6 = np.zeros(len(df))
@@ -56,6 +69,10 @@ def count_pred_values(df):
 
 
 def add_features(df):
+    '''
+    INPUT: one patch's dataframe
+    OUTPUT: same dataframe with several columns added for use in model-building
+    '''
     df = df.copy()
     df['avg_pred'] = df['predictions'].apply(np.mean)
     df['num_changes'] = df['predictions'].apply(np.size)
@@ -73,7 +90,9 @@ def add_features(df):
             avg_ratio.append(1)
     df['avg_ratio'] = avg_ratio
     df = count_pred_values(df)
-    pred_dummies = pd.get_dummies(pd.cut(df['avg_pred'], [0, 0.4, 0.6, 0.7, 0.8, 0.9, 1.01]), prefix='avg_pred', dummy_na=True)
+    cuts = [0, 0.4, 0.6, 0.7, 0.8, 0.9, 1.01]
+    pred_dummies = pd.get_dummies(pd.cut(df['avg_pred'], cuts),
+                                  prefix='avg_pred', dummy_na=True)
     df = pd.concat([df, pred_dummies], axis=1)
     df = add_pair_features(df)
     return df

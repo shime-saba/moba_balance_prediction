@@ -4,16 +4,28 @@ import numpy as np
 from add_model_features import add_features
 import matplotlib.pyplot as plt
 
+
 def get_all_dfs(data_folder_path):
+    '''
+    INPUT: path to data folder
+    OUTPUT: dictionary of dataframes of patch/drafting info
+            (extra features from add_model_features have not been added)
+    '''
     with open('{0}/all_patch_draft_dfs.pkl'.format(data_folder_path)) as f:
         patch_draft_dfs = pickle.load(f)
-    del patch_draft_dfs['6.77'] # first patch recorded; no "prev. patch" data
+    del patch_draft_dfs['6.77']  # first patch recorded; no "prev. patch" data
     for key, df in patch_draft_dfs.iteritems():
         df = df.copy()
         patch_draft_dfs[key] = add_features(df)
     return patch_draft_dfs
 
+
 def get_X_and_y(df, model_type, threshold=60):
+    '''
+    INPUT: dataframe, type of model (regressor or classifier), threshold for
+           use in classification problem
+    OUTPUT: X (modeling variables) and y (target/response variable) arrays
+    '''
     df = df.copy()
     df.drop(['hero',
              'patch',
@@ -39,9 +51,10 @@ def get_X_and_y(df, model_type, threshold=60):
         X = df.values
     else:
         print "Type must be regressor or classifier"
-        return
+        return 0, 0
 
     return X, y
+
 
 def one_patch_predictor(patch_draft_dfs, target_patch, model, model_type, threshold=60):
     '''
@@ -64,9 +77,10 @@ def one_patch_predictor(patch_draft_dfs, target_patch, model, model_type, thresh
         print "Type must be regressor or classifier"
         return
 
+
 def plot_scatter(y_true, y_pred, patch_num, rescale=False, log=False):
     if rescale:
-        y_pred = y_pred * 2000 / np.sum(y_pred)
+        y_pred = y_pred * 2000 / np.sum(y_pred)  # use fact that sum of predictions should be 2000%
     plt.figure(figsize=(10, 8))
     if log:
         plt.xlim(-0.5, 5)
