@@ -1,8 +1,8 @@
 import cPickle as pickle
 import pandas as pd
 import numpy as np
-from add_model_features import add_features
 import matplotlib.pyplot as plt
+from add_model_features import add_features
 
 
 def get_all_dfs(data_folder_path):
@@ -58,8 +58,11 @@ def get_X_and_y(df, model_type, threshold=60):
 
 def one_patch_predictor(patch_draft_dfs, target_patch, model, model_type, threshold=60):
     '''
+    INPUT: dict of patch number: patch/draft dfs, patch number to target for
+           prediction, model object to use, model type (regressor or classifier),
+           threshold for use in classification problem.
     OUTPUT: true y values, previous patch values, model predictions
-    (if model_type is 'classifier', predictions are prob. of pb% > 60)
+    (if model_type is 'classifier', predictions are prob. of pb% > threshold)
     '''
     patch_draft_dfs = patch_draft_dfs.copy()
     df_target = patch_draft_dfs.pop(target_patch)
@@ -79,6 +82,11 @@ def one_patch_predictor(patch_draft_dfs, target_patch, model, model_type, thresh
 
 
 def plot_scatter(y_true, y_pred, patch_num, rescale=False, log=False):
+    '''
+    INPUT: true target values, predicted values, patch number, boolean for
+           rescaling to force y_pred to have sum 2000, boolean for taking log
+    OUTPUT: None, but will display scatter plot in iPython notebook.
+    '''
     if rescale:
         y_pred = y_pred * 2000 / np.sum(y_pred)  # use fact that sum of predictions should be 2000%
     plt.figure(figsize=(10, 8))
