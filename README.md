@@ -1,5 +1,6 @@
 ## Predicting MOBA Balance Outcomes
-by Trevor Fisher
+Trevor Fisher
+[LinkedIn](https://www.linkedin.com/in/trefish)
 
 #### Background and Summary
 In a few more words, this project seeks to predict the effects of game balance updates on character selection in professional MOBA—more specifically, Dota 2—play.
