@@ -1,5 +1,6 @@
 ## Predicting MOBA Balance Outcomes
 Trevor Fisher
+
 [LinkedIn](https://www.linkedin.com/in/trefish)
 
 #### Background and Summary
