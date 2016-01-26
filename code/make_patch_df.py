@@ -4,9 +4,17 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 import cPickle as pickle
 import json
+import dota2api
 
 
 def get_hero_names():
+    d2a = dota2api.Initialise()
+    hero_name_set = set(hero['localized_name'] for hero in d2a.get_heroes()['heroes'])
+    new_heroes = set(['Arc Warden', 'Earth Spirit', 'Oracle'])
+    hero_name_set = hero_name_set.difference(new_heroes)
+    return hero_name_set
+
+def get_hero_names_old():
     '''
     helper function for df_from_patch_query;
     scrapes dota2 official site for set of hero names.
