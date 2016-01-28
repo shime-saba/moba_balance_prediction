@@ -9,7 +9,7 @@ In a few more words, this project seeks to predict the effects of game balance u
 In the MOBA genre, games generally begin with a "pick/ban phase", where each team bans some number of characters from selection by either team, and picks some number of characters to use in the current game. Which characters are feared enough to be targeted with bans or valued highly enough to be picked fluctuates quite a bit over time, and game developers will periodically intervene to balance the characters against each other.
 
 ![Nyx Nyx Nyx Nyx Nyx](images/nyx_patch_notes.png)
-<sub>Developer intervention usually looks something like this.</sub>
+> <sub>Developer intervention usually looks something like this.</sub>
 
 With that context in mind, my goal more concretely is to observe the state of competitive play before a balance update ("patch"), as well as the changes to the characters proposed in the patch, and predict each character's new pick and ban rate following the release of the patch.
 
