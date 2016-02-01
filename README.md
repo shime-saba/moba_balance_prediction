@@ -15,6 +15,22 @@ With that context in mind, my goal more concretely is to observe the state of co
 
 The problem can be modeled in two ways: as (1) a regression problem, where the outcome variable to predict is the percentage of games in which a character will be picked or banned, or as (2) a classification problem, where the goal is instead to predict whether a given character will be picked or banned in more than 50% (say) of competitive games.
 
+
+#### Repo structure
+
+1. [code](code/) contains python files to perform almost all of the tasks necessary to scrape, clean, and model the data. The general order in which each file would be used is:
+
+    [make_patch_df](code/make_patch_df.py) -> [patch_nlp](code/patch_nlp.py) -> [add_draft_info](code/add_draft_info.py) -> [hero_interactions](code/hero_interactions.py) -> [add_model_features](code/add_model_features.py) -> [model_utilities](code/model_utilities.py)
+
+2. [data](data/) contains raw data on draft and win/loss records, as well as several pickle files which are used throughout. In particular, [all_patch_draft_dfs.pkl](data/all_patch_draft_dfs.pkl) contains all of the dataframes necessary for the modeling step.
+
+3. [images](images/) contains a few plots of my results.
+
+4. [notebooks](notebooks/) contains several ipython notebooks which I used to explore and model the data. The order in which these were used is outlined in the Process section below.
+
+5. [presentations](presentations/) contains a few drafts of the presentation I gave on this material at galvanize on 1/14/16.
+
+
 #### Model details
 For the regression problem, I use a gradient boosting regressor with least absolute deviance loss, and typically achieve a 10-30% reduction in MSE over my baseline (predicting no change). The most important hyperparameter here seems to be the choice of loss function.
 
@@ -33,20 +49,6 @@ For both problems, my core set of model features included the following for each
 My "composite measure" features are weighted averages of the predicted changes to other heroes which commonly appear together/against particular heroes, where I am weighting by how much the other hero's presence in a game impacts the target hero's win rate. At least one of these two consistently appears among the top 3-4 most important features for every model, but I am still interested in exploring other ways of accounting for hero-hero interactions.
 
 One feature which most MOBA players would expect to see here, but which I have not built yet, is a measure of change to each hero's preferred items (permanent power-ups that may be purchased with an in-game resource). Items are also rebalanced in each patch, so I will need to build or modify code to scrape and apply NLP to item changes as I have done for hero changes.
-
-#### Repo structure
-
-1. [code](code/) contains python files to perform almost all of the tasks necessary to scrape, clean, and model the data. The general order in which each file would be used is:
-
-    [make_patch_df](code/make_patch_df.py) -> [patch_nlp](code/patch_nlp.py) -> [add_draft_info](code/add_draft_info.py) -> [hero_interactions](code/hero_interactions.py) -> [add_model_features](code/add_model_features.py) -> [model_utilities](code/model_utilities.py)
-
-2. [data](data/) contains raw data on draft and win/loss records, as well as several pickle files which are used throughout. In particular, [all_patch_draft_dfs.pkl](data/all_patch_draft_dfs.pkl) contains all of the dataframes necessary for the modeling step.
-
-3. [images](images/) contains a few plots of my results.
-
-4. [notebooks](notebooks/) contains several ipython notebooks which I used to explore and model the data. The order in which these were used is outlined in the Process section below.
-
-5. [presentations](presentations/) contains a few drafts of the presentation I gave on this material at galvanize on 1/14/16.
 
 
 #### Process
