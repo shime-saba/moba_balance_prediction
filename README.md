@@ -34,7 +34,7 @@ The problem can be modeled in two ways: as (1) a regression problem, where the o
 #### Model details
 For the regression problem, I use a gradient boosting regressor with least absolute deviance loss, and typically achieve a 10-30% reduction in MSE over my baseline (predicting no change). The most important hyperparameter here seems to be the choice of loss function.
 
-For the classification problem, I am use a stochastic gradient boosting classifier with exponential loss and a lower learning rate, and achieve about 77% area-under-curve on average over all patches. Here the most important hyperparameters were subsampling rate (the 'stochastic' in 'stochastic gradient boosting'), and again choice of loss function.
+For the classification problem, I am using a stochastic gradient boosting classifier with exponential loss and a lower learning rate, and achieve about 77% area-under-curve on average over all patches. Here the most important hyperparameters were subsampling rate (the 'stochastic' in 'stochastic gradient boosting'), and again choice of loss function.
 
 For both problems, my core set of model features included the following for each hero:
 
