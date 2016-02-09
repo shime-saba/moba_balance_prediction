@@ -3,7 +3,12 @@ Trevor Fisher
 
 [LinkedIn](https://www.linkedin.com/in/trefish)
 
-[Repo Structure](#repo-structure)
+#### Table of Contents
+- [Background and Summary](#background-and-summary)
+- [Repo structure](#repo-structure)
+- [Model details](#model-details)
+- [Process overview](#process)
+- [Coming Soon](#coming-soon)
 
 #### Background and Summary
 In a few more words, this project seeks to predict the effects of game balance updates on character selection in professional MOBA—more specifically, Dota 2—play.
@@ -17,6 +22,7 @@ With that context in mind, my goal more concretely is to observe the state of co
 
 The problem can be modeled in two ways: as (1) a regression problem, where the outcome variable to predict is the percentage of games in which a character will be picked or banned, or as (2) a classification problem, where the goal is instead to predict whether a given character will be picked or banned in more than 50% (say) of competitive games.
 
+<sub>[back to top ^](#predicting-moba-balance-outcomes)</sub>
 
 #### Repo structure
 
@@ -32,6 +38,7 @@ The problem can be modeled in two ways: as (1) a regression problem, where the o
 
 5. [presentations](presentations/) contains a few drafts of the presentation I gave on this material at galvanize on 1/14/16.
 
+<sub>[back to top ^](#predicting-moba-balance-outcomes)</sub>
 
 #### Model details
 For the regression problem, I use a gradient boosting regressor with least absolute deviance loss, and typically achieve a 10-30% reduction in MSE over my baseline (predicting no change). The most important hyperparameter here seems to be the choice of loss function.
@@ -52,6 +59,7 @@ My "composite measure" features are weighted averages of the predicted changes t
 
 One feature which most MOBA players would expect to see here, but which I have not built yet, is a measure of change to each hero's preferred items (permanent power-ups that may be purchased with an in-game resource). Items are also rebalanced in each patch, so I will need to build or modify code to scrape and apply NLP to item changes as I have done for hero changes.
 
+<sub>[back to top ^](#predicting-moba-balance-outcomes)</sub>
 
 #### Process
 Here's a beginning-to-end view of the steps I followed with this project:
@@ -64,9 +72,12 @@ Here's a beginning-to-end view of the steps I followed with this project:
 
 4. Finally, in the [model_building](notebooks/model_building.ipynb) and [model_visualizations](notebooks/model_visualizations.ipynb) notebooks, I unpickle the dataframes from step 3, augment them further to prepare for modeling with tools from [add_model_features.py](code/add_model_features.py), run a few trial models (in model_building), and generate some metrics and visualizations to present (in model_visualizations). [model_utilities.py](code/model_utilities.py) contains a few 'helper' functions that I use to speed up the modeling and visualization processes.
 
+<sub>[back to top ^](#predicting-moba-balance-outcomes)</sub>
 
 #### Coming Soon
 
 1. I'm planning to add a homemade grid search function to [model_utilities.py](code/model_utilities.py). I have been evaluating my classification models by some metrics like average AUC across all included patches, which requires 9 specific rounds of splitting and prediction. sklearn's built-in GridSearchCV is a lovely tool for model-tuning, but doesn't fit the bill for that problem.
 
 2. As mentioned in model details, I intend at some point to add the code to process item changes from patch notes as well. Some of my NLP code should work for item change prediction already, but I don't have the code to scrape or store that data yet.
+
+<sub>[back to top ^](#predicting-moba-balance-outcomes)</sub>
