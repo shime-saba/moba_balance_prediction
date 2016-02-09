@@ -3,6 +3,8 @@ Trevor Fisher
 
 [LinkedIn](https://www.linkedin.com/in/trefish)
 
+[Repo Structure](#repo-structure)
+
 #### Background and Summary
 In a few more words, this project seeks to predict the effects of game balance updates on character selection in professional MOBA—more specifically, Dota 2—play.
 
