@@ -45,13 +45,13 @@ For the regression problem, I use a gradient boosting regressor with least absol
 
 For the classification problem, I am using a stochastic gradient boosting classifier with exponential loss and a lower learning rate, and achieve about 77% area-under-curve on average over all patches. Here the most important hyperparameters were subsampling rate (the 'stochastic' in 'stochastic gradient boosting'), and again choice of loss function.
 
-For both problems, my core set of model features included the following for each hero:
+For both problems, my core set of model features included but was not limited to the following for each hero:
 
     - previous patch pick+ban %
     - previous patch win %
-    - number of changes in patch
+    - number of changes received
     - average of predictions (probability of positivity) of changes
-    - average size of change (numeric changes only)
+    - average size of changes (numeric changes only)
     - composite measure of change to commonly paired heroes
     - composite measure of change to common opposing heroes
 
