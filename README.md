@@ -52,7 +52,7 @@ For both problems, my core set of model features included but was not limited to
     - number of changes received
     - average of predictions (probability of positivity) of changes
     - average size of changes (numeric changes only)
-    - composite measure of change to commonly paired heroes
+    - composite measure of change to commonly-paired heroes
     - composite measure of change to common opposing heroes
 
 My "composite measure" features are weighted averages of the predicted changes to other heroes which commonly appear together/against particular heroes, where I am weighting by how much the other hero's presence in a game impacts the target hero's win rate. At least one of these two consistently appears among the top 3-4 most important features for every model, but I am still interested in exploring other ways of accounting for hero-hero interactions.
@@ -64,7 +64,7 @@ One feature which most MOBA players would expect to see here, but which I have n
 #### Process
 Here's a beginning-to-end view of the steps I followed with this project:
 
-1. I started by scraping [Patch 6.85](http://dota2.gamepedia.com/September_24,_2015_Patch), manually labeling each change as positive (1) or negative (0), and pickling the labeled dataframe as [patch_685_df.pkl](data/patch_685_df.pkl). This process, minus the labeling (which I regrettably did in Excel), can be found in the [685_read_in](notebooks/685_read_in.ipynb) notebook.
+1. I start by scraping [Patch 6.85](http://dota2.gamepedia.com/September_24,_2015_Patch), manually labeling each change as positive (1) or negative (0), and pickling the labeled dataframe as [patch_685_df.pkl](data/patch_685_df.pkl). This process, minus the manual labeling, can be found in the [685_read_in](notebooks/685_read_in.ipynb) notebook.
 
 2. With one labeled patch in hand, I'm ready to predict the probability of positivity for each change in every other patch. I augment my text in a few small ways before classification, e.g. by adding in the word "increased" when a positive numeric change is detected. More details can be found in [patch_nlp.py](code/patch_nlp.py). I carry out the actual prediction, and construction of dataframes, in the  [read_other_patches](notebooks/read_other_patches.ipynb) notebook.
 
@@ -79,5 +79,7 @@ Here's a beginning-to-end view of the steps I followed with this project:
 1. I'm planning to add a homemade grid search function to [model_utilities.py](code/model_utilities.py). I have been evaluating my classification models by some metrics like average AUC across all included patches, which requires 9 specific rounds of splitting and prediction. sklearn's built-in GridSearchCV is a lovely tool for model-tuning, but doesn't fit the bill for that problem.
 
 2. As mentioned in model details, I intend at some point to add the code to process item changes from patch notes as well. Some of my NLP code should work for item change prediction already, but I don't have the code to scrape or store that data yet.
+
+3. I have successfully used the Dota 2 API to scrape a LOT of data on all tournament matches; the code to perform this task can be found in [match_api_caller.py](code/match_api_caller.py). This data is sitting in a MongoDB on an EC2 instance, but I have yet to use it. Some information that could be of interest here includes hero item choices and hero skill progression choices.
 
 <sub>[back to top ^](#predicting-moba-balance-outcomes)</sub>
